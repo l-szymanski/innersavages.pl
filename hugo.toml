@@ -1,0 +1,31 @@
+baseURL = "https://innersavages.pl/"
+title = "Strona główna"
+locale = "pl"
+defaultContentLanguage = "pl"
+enableRobotsTXT = true
+summaryLength = 70
+disableKinds = ["section", "taxonomy", "term"]
+
+[params]
+  author = "Stowarzyszenie Inner Savages"
+  description = "Strona Stowarzyszenia"
+  themeColor = "#3498db"
+  googleAnalyticsID = "G-XZGX687LN2"
+
+[markup]
+  [markup.goldmark]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = true
+    style = "github"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  baseName = "rss"
+
+[pagination]
+  pagerSize = 5

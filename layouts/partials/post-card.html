@@ -1,0 +1,12 @@
+<article class="card summary-card">
+  {{ with .Params.featuredImage }}
+    {{ $image := strings.TrimPrefix "./" . }}
+    {{ with $.Resources.GetMatch $image }}
+      <a class="featured-link" href="{{ $.RelPermalink }}"><img class="featured-image" src="{{ .RelPermalink }}" alt=""></a>
+    {{ end }}
+  {{ end }}
+  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+  {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 02, 2006" }}</time>{{ end }}
+  <div class="summary">{{ .Summary }}</div>
+  <a class="continue-reading" href="{{ .RelPermalink }}">Kontynuuj czytanie &rarr;</a>
+</article>

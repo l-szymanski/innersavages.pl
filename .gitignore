@@ -1,10 +1,4 @@
-node_modules/
-public
-.gatsby-context.js
+public/
+.hugo_build.lock
 .DS_Store
-.intermediate-representation/
-.cache/
-yarn.lock
 .idea/
-.travis.yml
-package-lock.json

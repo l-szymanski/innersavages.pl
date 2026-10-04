@@ -1,0 +1,43 @@
+{{ define "main" }}
+  <article class="card">
+    <header class="article-header">
+      {{ with .Params.featuredImage }}
+        {{ $image := strings.TrimPrefix "./" . }}
+        {{ with $.Resources.GetMatch $image }}<img class="article-featured-image" src="{{ .RelPermalink }}" alt="">{{ end }}
+      {{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Date }}<p>{{ .Format "January 02, 2006" }}</p>{{ end }}
+      <span aria-hidden="true"></span>
+    </header>
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+  </article>
+  {{ if or (eq .Section "news") .Params.menu }}
+    {{ $current := . }}
+    {{ $isNews := eq .Section "news" }}
+    {{ $pages := slice }}
+    {{ if $isNews }}
+      {{ $pages = (where site.RegularPages "Section" "news").ByDate.Reverse }}
+    {{ else }}
+      {{ $pages = sort (where site.RegularPages "Params.menu" true) "Params.order" "asc" }}
+    {{ end }}
+    {{ $previous := false }}
+    {{ $next := false }}
+    {{ range $index, $page := $pages }}
+      {{ if eq $page $current }}
+        {{ if $isNews }}
+          {{ if lt (add $index 1) (len $pages) }}{{ $previous = index $pages (add $index 1) }}{{ end }}
+          {{ if gt $index 0 }}{{ $next = index $pages (sub $index 1) }}{{ end }}
+        {{ else }}
+          {{ if gt $index 0 }}{{ $previous = index $pages (sub $index 1) }}{{ end }}
+          {{ if lt (add $index 1) (len $pages) }}{{ $next = index $pages (add $index 1) }}{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    <nav class="page-navigation" aria-label="Nawigacja stron">
+      {{ with $previous }}<a class="button" href="{{ .RelPermalink }}" rel="prev">&larr; {{ .Title }}</a>{{ end }}
+      {{ with $next }}<a class="button" href="{{ .RelPermalink }}" rel="next">{{ .Title }} &rarr;</a>{{ end }}
+    </nav>
+  {{ end }}
+{{ end }}

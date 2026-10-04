@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{ if .IsHome }}{{ site.Title }} | {{ site.Params.author }}{{ else }}{{ .Title }} | {{ site.Params.author }}{{ end }}</title>
+{{ $description := .Description | default (printf "%s | %s" site.Title site.Params.description) }}
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="theme-color" content="{{ site.Params.themeColor }}">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Inner Savages">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} | {{ site.Params.author }}{{ else }}{{ .Title }} | {{ site.Params.author }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "news") }}article{{ else }}website{{ end }}">
+<meta name="twitter:card" content="{{ if .Params.featuredImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }} | {{ site.Params.author }}{{ else }}{{ .Title }} | {{ site.Params.author }}{{ end }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{ with .Params.featuredImage }}
+  {{ $image := strings.TrimPrefix "./" . }}
+  {{ with $.Resources.GetMatch $image }}
+    <meta property="og:image" content="{{ .Permalink }}">
+    <meta name="twitter:image" content="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+{{ with .Date }}{{ if and $.IsPage (eq $.Section "news") }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}{{ end }}
+<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ "rss.xml" | relURL }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+<link rel="manifest" href="{{ "manifest.webmanifest" | relURL }}">
+{{ range (slice "48x48" "72x72" "96x96" "144x144" "192x192" "256x256" "384x384" "512x512") }}
+  <link rel="apple-touch-icon" sizes="{{ . }}" href="{{ printf "icons/icon-%s.png" . | relURL }}">
+{{ end }}
+{{ $style := resources.Get "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">

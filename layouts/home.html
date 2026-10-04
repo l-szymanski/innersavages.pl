@@ -1,0 +1,14 @@
+{{ define "main" }}
+  {{ $posts := where site.RegularPages "Section" "news" }}
+  {{ $sortedPosts := $posts.ByDate.Reverse }}
+  {{ if gt (len $sortedPosts) 5 }}
+    {{ $paginator := .Paginate $sortedPosts 5 }}
+    {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+    <nav class="pagination" aria-label="Paginacja aktualności">
+      {{ with $paginator.Prev }}<a class="button" href="{{ .URL }}">&larr; Newer Posts</a>{{ end }}
+      {{ with $paginator.Next }}<a class="button" href="{{ .URL }}">Older Posts &rarr;</a>{{ end }}
+    </nav>
+  {{ else }}
+    {{ range $sortedPosts }}{{ partial "post-card.html" . }}{{ end }}
+  {{ end }}
+{{ end }}

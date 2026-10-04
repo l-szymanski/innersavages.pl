@@ -1,0 +1,13 @@
+<header class="site-header container">
+  <div class="brand">
+    <a href="{{ "/" | relURL }}">
+      <img src="{{ "images/innersavages_logo.svg" | relURL }}" alt="Inner Savages Logo" width="380" height="102">
+    </a>
+  </div>
+  <nav class="menu" aria-label="Nawigacja główna">
+    <a href="{{ "/" | relURL }}">Aktualności</a>
+    {{ range sort (where site.RegularPages "Params.menu" true) "Params.order" "asc" }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  </nav>
+</header>

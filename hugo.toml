@@ -4,12 +4,12 @@ locale = "pl"
 defaultContentLanguage = "pl"
 enableRobotsTXT = true
 summaryLength = 70
-disableKinds = ["section", "taxonomy", "term"]
+disableKinds = ["taxonomy", "term"]
 
 [params]
   author = "Stowarzyszenie Inner Savages"
   description = "Strona Stowarzyszenia"
-  themeColor = "#3498db"
+  themeColor = "#0a0c0d"
   googleAnalyticsID = "G-XZGX687LN2"
 
 [markup]

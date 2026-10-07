@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <section class="chronicle" aria-labelledby="chronicle-title">
+    <header class="chronicle__header">
+      <p class="chronicle__eyebrow">ARCHIWUM WATAHY</p>
+      <h1 id="chronicle-title">{{ .Title }}</h1>
+      <div class="chronicle__intro">{{ .Content }}</div>
+    </header>
+
+    {{ range .Pages.ByDate.Reverse.GroupByDate "2006" }}
+      <section class="chronicle-year" aria-labelledby="year-{{ .Key }}">
+        <h2 id="year-{{ .Key }}">{{ .Key }}</h2>
+        <ol class="chronicle-list">
+          {{ range .Pages }}
+            <li class="chronicle-event chronicle-event--{{ .Params.category }}{{ with .Params.trophies }} chronicle-event--success{{ end }}">
+              <div class="chronicle-event__marker">
+                {{ partial "kronika/icon.html" .Params.category }}
+              </div>
+              <article>
+                <div class="chronicle-event__meta">
+                  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "kronika/date-range.html" . }}</time>
+                  <span>{{ partial "kronika/category-label.html" .Params.category }}</span>
+                </div>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ with .Params.trophies }}
+                  <div class="chronicle-event__trophies" aria-label="Osiągnięcia">
+                    {{ range . }}
+                      <span>{{ with .label }}{{ . }}{{ else }}{{ with .place }}{{ . }}. miejsce{{ end }}{{ end }}</span>
+                    {{ end }}
+                  </div>
+                {{ end }}
+              </article>
+            </li>
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+  </section>
+{{ end }}

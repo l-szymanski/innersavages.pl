@@ -1,13 +1,22 @@
-<header class="site-header container">
-  <div class="brand">
-    <a href="{{ "/" | relURL }}">
-      <img src="{{ "images/innersavages_logo.svg" | relURL }}" alt="Inner Savages Logo" width="380" height="102">
+<header class="is-header">
+  <div class="is-header__inner">
+    <a class="is-header__logo" href="{{ "/" | relURL }}" aria-label="Inner Savages — strona główna">
+      <img src="{{ "images/brand-native/header-logo.png" | relURL }}" alt="Inner Savages">
     </a>
+
+    <nav class="is-header__nav" aria-label="Nawigacja główna">
+      <a class="{{ if .IsHome }}is-active{{ end }}" href="{{ "/" | relURL }}">Start</a>
+      <a href="{{ "/about/" | relURL }}">O nas</a>
+      <a class="{{ if eq .RelPermalink "/co-robimy/" }}is-active{{ end }}" href="{{ "/co-robimy/" | relURL }}">Co robimy</a>
+      <a class="{{ if eq .Section "kronika" }}is-active{{ end }}" href="{{ "/kronika/" | relURL }}">Kronika</a>
+      <a class="{{ if eq .Section "trofea" }}is-active{{ end }}" href="{{ "/trofea/" | relURL }}">Trofea</a>
+      <a href="{{ "/members/" | relURL }}">Wataha</a>
+      <a class="{{ if eq .Section "news" }}is-active{{ end }}" href="{{ "/news/" | relURL }}">Aktualności</a>
+    </nav>
+
+    <div class="is-header__actions">
+      <span class="is-header__search" aria-hidden="true"></span>
+      <a class="is-header__support" href="{{ "/partnership/" | relURL }}">Wesprzyj nas <span aria-hidden="true">→</span></a>
+    </div>
   </div>
-  <nav class="menu" aria-label="Nawigacja główna">
-    <a href="{{ "/" | relURL }}">Aktualności</a>
-    {{ range sort (where site.RegularPages "Params.menu" true) "Params.order" "asc" }}
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    {{ end }}
-  </nav>
 </header>

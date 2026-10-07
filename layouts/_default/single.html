@@ -6,7 +6,7 @@
         {{ with $.Resources.GetMatch $image }}<img class="article-featured-image" src="{{ .RelPermalink }}" alt="">{{ end }}
       {{ end }}
       <h1>{{ .Title }}</h1>
-      {{ with .Date }}<p>{{ .Format "January 02, 2006" }}</p>{{ end }}
+      {{ with .Date }}<p>{{ .Format "2006-01-02" }}</p>{{ end }}
       <span aria-hidden="true"></span>
     </header>
     <div class="article-content">

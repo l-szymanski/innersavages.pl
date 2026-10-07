@@ -6,32 +6,10 @@ order: 10
 
 <!--more-->
 
-Nasza grupa powstała parę lat przed zarejestrowaniem stowarzyszenia. W kwietniu 2018 spotykamy się w gronie znajomych
-z bydgoskiego Radia Uniwersytet na II Bydgoskim Hackathonie. Jako, iż nie mamy nazwy ani nawet pomysłu, używamy
-znalezionego w internecie generatora losowych nazw i przyjmujemy miano __Inner Savages__. Imprezę wygrywamy nie będąc
-świadomymi, że to dopiero początek.
+Inner Savages to ludzie, których ciągnie do rzeczy trudnych, nietypowych i technicznie ciekawych. Lubimy zaglądać pod maskę, rozkładać problemy na części, sprawdzać granice i szukać rozwiązań tam, gdzie oczywiste ścieżki przestają działać.
 
-Idea współzawodnictwa i poglębiania wiedzy w czasie hackathonów spodobała nam się na tyle, iż zaczęliśmy rozglądać się
-za podobnymi imprezami. Wzięliśmy udział w kolejnych hackathonach i rozpoczęliśmy przygodę z formatem Capture
-The Flag. Poza zmaganiami konkursowymi spotykamy się na meetupach, konferencjach i webinarach. Jesteśmy ciekawi i głodni
-wiedzy. Staramy się z każdego wydarzenia wynieść coś pozytywnego.
+Budujemy projekty, eksperymentujemy z technologią, zajmujemy się bezpieczeństwem, reverse engineeringiem i szeroko pojętym dłubaniem przy systemach. Startujemy w hackathonach, tworzymy rzeczy od zera, poprawiamy cudze pomysły, a czasem najpierw coś zepsujemy, żeby naprawdę zrozumieć, jak działa.
 
-Na początku 2020 z inicjatywy Łukasza pojawia się chęć dalszego działania. Proponowaną formą zrzeszenia się jest
-stowarzyszenie rejestrowe. Pandemia koronawirusa krzyżuje nam lekko plany. Po paru próbach zorganizowania zebrania
-założycielskiego, w końcu udaje się nam to dopiero w sierpniu 2020. Uchwalamy statut, wybieramy Zarząd oraz Komisję
-Rewizyjną. Formalnie w KRS zostajemy zarejestrowani 28 sierpnia 2020. Od tego momentu zaczynamy funkcjonować jako 
-stowarzyszenie __Inner Savages__.
+Nie interesuje nas robienie technologii pod prezentację ani udawanie większych, niż jesteśmy. Robimy to, co nas ciekawi, na własnych zasadach, z dużą swobodą i bez potrzeby dopasowywania się do korporacyjnego języka czy cudzych oczekiwań. Liczy się pomysł, umiejętność dowiezienia go do końca i satysfakcja z tego, że udało się zrobić coś dobrze, sprytnie albo po prostu inaczej.
 
-Celem stowarzyszenia jest prowadzenie działalności edukacyjnej, naukowo-technicznej i kulturalnej zwłaszcza w zakresie
-inicjowania, wspierania i pomocy w przedsięwzięciach edukacyjno-kulturalnych i naukowo-technicznych związanych z branżą
-informatyczną, w szczególności z wolnym oprogramowaniem oraz programowaniem. *(zapis z naszego statutu)*
-
-W chwili obecnej realizujemy swoje cele głównie poprzez uczestnictwo w wydarzeniach informatycznych, w szczególności:
- - konferencjach
- - meetupach
- - hackathonach
- - capture the flag
- 
-W przyszłości chcemy zorganizować własne imprezy w powyższych formatach. Działamy non-profit, więc wszystko jest 
-uwarunkowane czasem, jakim dysponują nasi członkowie. Wierzymy w to, iż drobnymi krokami będziemy realizować nasze cele.
-Nadal jesteśmy na początku drogi.
+Formalnie jesteśmy stowarzyszeniem. W praktyce — watahą technicznych zapaleńców z pomysłami, charakterem i zdecydowanie zbyt dużą ciekawością, jak coś działa od środka.

@@ -1,0 +1,12 @@
+{{- $category := . -}}
+<svg class="event-icon" viewBox="0 0 48 48" aria-hidden="true">
+  {{- if eq $category "registration" }}
+    <path d="M12 6h18l6 6v28H12zM30 6v7h6M18 20h12M18 26h8M24 31a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM21 40l-2 3M27 40l2 3"/>
+  {{- else if eq $category "hackathon" }}
+    <path d="M8 10h32v28H8zM8 17h32M14 14h1M19 14h1M16 24l-5 4 5 4M32 24l5 4-5 4M27 21l-6 14"/>
+  {{- else if eq $category "ctf" }}
+    <path d="M13 42V7M14 9h21l-4 7 4 7H14M22 31a5 5 0 1 0 0 10 5 5 0 0 0 0-10zM27 36h10M34 36v4M30 36v3"/>
+  {{- else }}
+    <path d="M10 11h28v27H10zM10 18h28M17 7v8M31 7v8M17 25h2M24 25h2M31 25h2M17 31h2M24 31h2"/>
+  {{- end }}
+</svg>

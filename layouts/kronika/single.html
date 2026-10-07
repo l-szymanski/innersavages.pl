@@ -1,0 +1,59 @@
+{{ define "main" }}
+  <article class="event-page">
+    <a class="event-page__back" href="{{ "/kronika/" | relURL }}"><span aria-hidden="true">←</span> Kronika</a>
+
+    <header class="event-page__header">
+      <div class="event-page__category">
+        {{ partial "kronika/icon.html" .Params.category }}
+        <span>{{ partial "kronika/category-label.html" .Params.category }}</span>
+      </div>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "kronika/date-range.html" . }}</time>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.caption }}<p class="event-page__caption">{{ . }}</p>{{ end }}
+
+      {{ if or .Params.location .Params.organizer }}
+        <dl class="event-page__facts">
+          {{ with .Params.location }}<div><dt>Miejsce</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{ with .Params.organizer }}<div><dt>Organizator</dt><dd>{{ . }}</dd></div>{{ end }}
+        </dl>
+      {{ end }}
+    </header>
+
+    {{ with .Params.cover }}
+      {{ with $.Resources.GetMatch . }}
+        <img class="event-page__cover" src="{{ .RelPermalink }}" alt="">
+      {{ end }}
+    {{ end }}
+
+    <div class="event-page__content article-content">
+      {{ .Content }}
+    </div>
+
+    {{ with .Params.links }}
+      <section class="event-page__links" aria-labelledby="event-links-title">
+        <h2 id="event-links-title">Linki</h2>
+        <ul>
+          {{ range . }}<li><a href="{{ .url }}">{{ .label }} <span aria-hidden="true">↗</span></a></li>{{ end }}
+        </ul>
+      </section>
+    {{ end }}
+
+    {{ with .Params.trophies }}
+      <section class="event-page__trophies" aria-labelledby="event-trophies-title">
+        <h2 id="event-trophies-title">Trofea</h2>
+        <div class="event-trophy-list">
+          {{ range . }}
+            <article class="event-trophy" data-artifact="{{ .artifact | default "default" }}">
+              {{ partial "trofea/artifact.html" .artifact }}
+              <div>
+                <h3>{{ with .label }}{{ . }}{{ else }}Osiągnięcie{{ end }}</h3>
+                {{ with .team }}<p><span>Zespół</span>{{ . }}</p>{{ end }}
+                {{ with .project }}<p><span>Projekt</span>{{ . }}</p>{{ end }}
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </section>
+    {{ end }}
+  </article>
+{{ end }}

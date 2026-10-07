@@ -1,0 +1,9 @@
+{{- if eq . "registration" -}}
+  Rejestracja stowarzyszenia
+{{- else if eq . "hackathon" -}}
+  Hackathon
+{{- else if eq . "ctf" -}}
+  CTF
+{{- else -}}
+  Inne
+{{- end -}}

@@ -1,4 +1,41 @@
 <footer class="site-footer">
-  <p><a href="{{ "/privacypolicy/" | relURL }}">Polityka Prywatności</a></p>
-  <p>Inner Savages &copy; 2020</p>
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a href="{{ "/" | relURL }}" aria-label="Inner Savages — strona główna">
+        <img src="{{ "images/brand-native/hero-wordmark.png" | relURL }}" alt="Inner Savages">
+      </a>
+      <p class="site-footer__tagline">PEOPLE / IDEAS / CHAOS / PROGRESS</p>
+      <p class="site-footer__summary">Formalnie stowarzyszenie. W praktyce — wataha technicznych zapaleńców.</p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Nawigacja w stopce">
+      <p class="site-footer__label">Na skróty</p>
+      <a href="{{ "/about/" | relURL }}">O nas</a>
+      <a href="{{ "/co-robimy/" | relURL }}">Co robimy</a>
+      <a href="{{ "/kronika/" | relURL }}">Kronika</a>
+      <a href="{{ "/trofea/" | relURL }}">Trofea</a>
+      <a href="{{ "/members/" | relURL }}">Wataha</a>
+      <a href="{{ "/news/" | relURL }}">Aktualności</a>
+    </nav>
+
+    <div class="site-footer__contact">
+      <p class="site-footer__label">Kontakt</p>
+      <a class="site-footer__email" href="mailto:zarzad@innersavages.pl">zarzad@innersavages.pl</a>
+      <address>
+        ul. Igrzyskowa 6/39<br>
+        85-796 Bydgoszcz, Polska
+      </address>
+      <a class="site-footer__support" href="{{ "/partnership/" | relURL }}">Wesprzyj nas <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <p>&copy; {{ now.Year }} Inner Savages</p>
+    <p class="site-footer__registry">KRS 0000857213 <span aria-hidden="true">/</span> NIP 5542987442 <span aria-hidden="true">/</span> REGON 386882015</p>
+    <nav aria-label="Linki formalne">
+      <a href="{{ "/statut/" | relURL }}">Statut</a>
+      <a href="{{ "/privacypolicy/" | relURL }}">Polityka prywatności</a>
+      <a href="{{ "/contact/" | relURL }}">Dane kontaktowe</a>
+    </nav>
+  </div>
 </footer>

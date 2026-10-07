@@ -4,7 +4,7 @@ date: "2021-05-31"
 featuredImage: './bayerhackathon.png'
 ---
 
-Odnieśliśmy sukces w Bayer 2021 Hackathon, przechodząc do finału i zdobywając 4 miejsce w kategorii "Hunger for None".  
+Odnieśliśmy sukces w Bayer 2021 Hackathon, przechodząc do finału i zdobywając 3. miejsce ex aequo w kategorii "Hunger for None".  
 
 <!--more-->
 
@@ -18,4 +18,4 @@ Podziękowania należą się organizatorowi, dzięki któremu mieliśmy sposobno
 firmie Bayer.
 
 Relację z naszego punktu widzenia można przeczytać pod adresem 
-https://szymanski.ninja/en/hackathons/2021/bayerhackathon/
+https://beatbybit.net/en/hackathons/2021/bayerhackathon/

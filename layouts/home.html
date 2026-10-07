@@ -1,14 +1,92 @@
 {{ define "main" }}
-  {{ $posts := where site.RegularPages "Section" "news" }}
-  {{ $sortedPosts := $posts.ByDate.Reverse }}
-  {{ if gt (len $sortedPosts) 5 }}
-    {{ $paginator := .Paginate $sortedPosts 5 }}
-    {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
-    <nav class="pagination" aria-label="Paginacja aktualności">
-      {{ with $paginator.Prev }}<a class="button" href="{{ .URL }}">&larr; Newer Posts</a>{{ end }}
-      {{ with $paginator.Next }}<a class="button" href="{{ .URL }}">Older Posts &rarr;</a>{{ end }}
-    </nav>
-  {{ else }}
-    {{ range $sortedPosts }}{{ partial "post-card.html" . }}{{ end }}
-  {{ end }}
+<section class="is-hero" aria-labelledby="hero-title">
+  <div class="is-hero__texture" aria-hidden="true"></div>
+  <div class="is-hero__inner">
+    <div class="is-hero__copy">
+      <h1 id="hero-title" class="is-hero__wordmark">
+        <img src="{{ "images/brand-native/hero-wordmark.png" | relURL }}" alt="Inner Savages">
+      </h1>
+
+      <p class="is-hero__tagline">PEOPLE / IDEAS / CHAOS / PROGRESS</p>
+
+      <p class="is-hero__lead">
+        Działamy tam, gdzie technologia spotyka ludzi.<br>
+        Tworzymy, uczymy się, wspieramy i budujemy razem.
+      </p>
+
+      <div class="is-hero__buttons">
+        <a class="is-btn is-btn--primary" href="{{ "/about/" | relURL }}">Poznaj nas <span aria-hidden="true">→</span></a>
+        <a class="is-btn is-btn--ghost" href="{{ "/co-robimy/" | relURL }}">Zobacz co robimy <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <div class="is-hero__art" aria-hidden="true">
+      <img src="{{ "images/brand-native/hero-orc.png" | relURL }}" alt="">
+    </div>
+
+    <div class="is-hero__motto">
+      <img src="{{ "images/brand-native/hero-motto.png" | relURL }}" alt="">
+      <span class="sr-only">Build. Hack. Break. Improve.</span>
+    </div>
+  </div>
+</section>
+
+<section class="home-section home-about" aria-labelledby="kim-jestesmy-title">
+  <div class="home-section__inner home-about__grid">
+    <header class="home-section__header">
+      <p class="home-section__index" aria-hidden="true">01 / O NAS</p>
+      <h2 id="kim-jestesmy-title">Kim jesteśmy</h2>
+    </header>
+
+    <div class="home-about__copy">
+      <p class="home-about__lead">Inner Savages to ludzie, których ciągnie do rzeczy trudnych, nietypowych i technicznie ciekawych.</p>
+      <p>Lubimy zaglądać pod maskę, rozkładać problemy na części, sprawdzać granice i szukać rozwiązań tam, gdzie oczywiste ścieżki przestają działać. Budujemy, eksperymentujemy i uczymy się przez praktykę — na własnych zasadach.</p>
+      <a class="home-link" href="{{ "/about/" | relURL }}">Poznaj całą historię <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="co-robimy" class="home-section home-work" aria-labelledby="co-robimy-title">
+  <div class="home-section__inner">
+    <header class="home-section__header home-work__header">
+      <div>
+        <p class="home-section__index" aria-hidden="true">02 / DZIAŁANIA</p>
+        <h2 id="co-robimy-title">Co robimy</h2>
+      </div>
+      <p>Jeśli coś jest ciekawe, stanowi problem do rozwiązania albo po prostu nas zastanawia, prędzej czy później ktoś zacznie przy tym dłubać.</p>
+    </header>
+
+    <div class="home-work__list">
+      <article class="home-work__item">
+        <span class="home-work__number">01</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 13h30v22H9zM16 20l-4 4 4 4M32 20l4 4-4 4M27 17l-6 14"/></svg>
+        <h3>Hacking</h3>
+        <p>Sprzęt, oprogramowanie, sieci, firmware i bezpieczeństwo. Zaglądamy tam, gdzie dokumentacja już się skończyła.</p>
+      </article>
+
+      <article class="home-work__item">
+        <span class="home-work__number">02</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 11h32v26H8zM8 17h32M13 14h1M18 14h1M23 14h1M16 24l-4 4 4 4M32 24l4 4-4 4M27 22l-6 12"/></svg>
+        <h3>Programowanie</h3>
+        <p>Piszemy narzędzia, automatyzacje, prototypy i całe rozwiązania. Technologia jest środkiem do celu.</p>
+      </article>
+
+      <article class="home-work__item">
+        <span class="home-work__number">03</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 7h12M21 7v11L11 36a3 3 0 0 0 3 5h20a3 3 0 0 0 3-5L27 18V7M16 30h16M20 35h1M27 34h1"/></svg>
+        <h3>Nauka i eksperymenty</h3>
+        <p>Uruchomić, rozebrać, zmierzyć, zepsuć, zrozumieć i spróbować jeszcze raz. Tak uczymy się najchętniej.</p>
+      </article>
+
+      <article class="home-work__item">
+        <span class="home-work__number">04</span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7v7M24 34v7M7 24h7M34 24h7M12 12l5 5M31 31l5 5M36 12l-5 5M17 31l-5 5M24 17a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+        <h3>Hackathony i CTF-y</h3>
+        <p>Deadline, wspólne kombinowanie i problemy, których jeszcze wczoraj nie umieliśmy rozwiązać.</p>
+      </article>
+    </div>
+
+    <a class="home-link home-work__more" href="{{ "/co-robimy/" | relURL }}">Zobacz, czym się zajmujemy <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 {{ end }}

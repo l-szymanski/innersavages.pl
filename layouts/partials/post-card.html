@@ -6,7 +6,7 @@
     {{ end }}
   {{ end }}
   <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 02, 2006" }}</time>{{ end }}
+  {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time>{{ end }}
   <div class="summary">{{ .Summary }}</div>
   <a class="continue-reading" href="{{ .RelPermalink }}">Kontynuuj czytanie &rarr;</a>
 </article>

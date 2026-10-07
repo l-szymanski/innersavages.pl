@@ -3,12 +3,12 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
+  <body class="{{ if .IsHome }}is-home{{ end }}">
     {{ partial "header.html" . }}
-    <main class="container">
+    <main class="{{ if .IsHome }}home-main{{ else }}container page-main{{ end }}">
       {{ block "main" . }}{{ end }}
-      {{ partial "footer.html" . }}
     </main>
+    {{ partial "footer.html" . }}
     {{ if and site.Params.googleAnalyticsID (not hugo.IsServer) }}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
       <script>

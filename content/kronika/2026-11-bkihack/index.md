@@ -3,6 +3,13 @@ title: "11. BKIhack"
 date: 2026-03-27
 endDate: 2026-03-28
 category: hackathon
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/janek-baumgart"
+  - "/members/piotr-olszewski"
+  - "/members/jakub-zieba"
+  - "/members/mateusz-borowski"
+  - "/friends/przemek-g"
 location: "Młyny Rothera, Bydgoszcz"
 organizer: "Bydgoski Klaster Informatyczny"
 links:

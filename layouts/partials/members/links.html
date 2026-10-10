@@ -1,0 +1,21 @@
+{{- with .Params.links -}}
+  <ul class="pack-profile__links" aria-label="Linki profilu">
+    {{- range . -}}
+      {{- if .url -}}
+        {{- $category := .category | default "default" -}}
+        {{- if not (in (slice "default" "email" "homepage" "linkedin" "github") $category) -}}
+          {{- $category = "default" -}}
+        {{- end -}}
+        {{- $labels := dict "default" "Link" "email" "E-mail" "homepage" "Strona domowa" "linkedin" "LinkedIn" "github" "GitHub" -}}
+        {{- $label := .label | default (index $labels $category) -}}
+        {{- $external := or (hasPrefix .url "https://") (hasPrefix .url "http://") (hasPrefix .url "//") -}}
+        <li>
+          <a class="pack-profile__link" href="{{ .url | relURL }}" title="{{ $label }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            {{ partial "members/link-icon.html" $category }}
+            <span class="sr-only">{{ $label }}{{ if $external }} (otwiera się w nowej karcie){{ end }}</span>
+          </a>
+        </li>
+      {{- end -}}
+    {{- end -}}
+  </ul>
+{{- end -}}

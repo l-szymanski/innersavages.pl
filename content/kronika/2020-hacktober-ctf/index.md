@@ -3,6 +3,10 @@ title: "Hacktober CTF"
 date: 2020-10-16
 endDate: 2020-10-18
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/monika-szymanska"
+  - "/members/jakub-skory"
 location: "Online"
 ---
 

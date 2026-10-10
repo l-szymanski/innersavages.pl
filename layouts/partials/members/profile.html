@@ -1,0 +1,46 @@
+{{- $isFriend := eq .Section "friends" -}}
+  <article class="pack-profile">
+    <a class="pack-profile__back" href="{{ if $isFriend }}{{ "/members/#pack-friends-heading" | relURL }}{{ else }}{{ .Parent.RelPermalink }}{{ end }}"><span aria-hidden="true">←</span> Wataha</a>
+    <div class="pack-profile__hero">
+      <div class="pack-profile__avatar">
+        {{ partial "members/portrait.html" (dict "page" . "variant" "profile") }}
+        <div class="pack-profile__facts pack-profile__facts--organization">
+          {{- if $isFriend -}}
+            <div><h2>Przyjaciele</h2><p>Przyjaciel watahy</p></div>
+          {{- else if eq .Params.membership "regular" -}}
+            <div><h2>Członkostwo</h2><p>Członek zwyczajny</p></div>
+          {{- else if eq .Params.membership "supporting" -}}
+            <div><h2>Członkostwo</h2><p>Członek wspierający</p></div>
+          {{- else -}}
+            {{- warnf "Wataha: nieprawidłowe membership w %s: %v" .File.Path .Params.membership -}}
+          {{- end -}}
+          {{ with .Params.roles }}
+            <div><h2>Funkcje</h2><ul>
+              {{ range . }}
+                <li>{{ with .position }}{{ . }}{{ else }}{{ if eq .body "board" }}Zarząd{{ else if eq .body "audit" }}Komisja Rewizyjna{{ end }}{{ end }}</li>
+              {{ end }}
+            </ul></div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="pack-profile__identity">
+        <p class="pack-profile__eyebrow">{{ if $isFriend }}PRZYJACIELE WATAHY{{ else }}PROFIL WATAHY{{ end }}</p>
+        {{ with .Params.nickname }}
+          <h1>{{ . }}</h1>
+          <p class="pack-profile__nickname">{{ $.Title }}</p>
+        {{ else }}
+          <h1>{{ .Title }}</h1>
+        {{ end }}
+        {{ partial "members/tagline.html" (dict "text" .Params.tagline "variant" "profile") }}
+        {{ partial "members/links.html" . }}
+        {{ partial "members/perks.html" . }}
+      </div>
+    </div>
+
+    {{ with .Content }}
+      <div class="pack-profile__details">
+        <div class="pack-profile__content article-content">{{ . }}</div>
+      </div>
+    {{ end }}
+    {{ partial "members/chronicle.html" . }}
+  </article>

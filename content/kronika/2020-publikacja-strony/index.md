@@ -2,6 +2,8 @@
 title: "Publikujemy stronę internetową"
 date: 2020-12-01
 category: other
+participants:
+  - "/members/lukasz-szymanski"
 location: "Online"
 links:
   - label: "Strona Inner Savages"

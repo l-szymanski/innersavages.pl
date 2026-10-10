@@ -1,36 +1,18 @@
 ---
-title: Wesprzyj nas!
+title: Wesprzyj nas
 menu: true
 order: 60
 ---
 
 <!--more-->
 
-# Dołącz do nas
-Masz pomysł na własną inicjatywę związaną z IT? Skontaktuj się z nami, może uda nam się wspólnie zrealizować Twoje 
-pomysły.
+Robimy swoje. Z własnej ciekawości, we własnym tempie i na własnych zasadach.
 
-Obecnie nasze stowarzyszenie regularnie bierze udział w imprezach w formacie hackathon i CTF.
+Nie polujemy na sponsorów, ale jeśli ktoś chce dorzucić się do naszych pomysłów — nie będziemy mu przeszkadzać.
 
-Poszukujemy osób zainteresowanych rozwojem w jednym z poniższych kierunków:
- - grafika komputerowa (bo sami nie umiemy w grafikę ;-) ),
- - programowanie (rozważamy uczestnictwo w innych formatach imprez, takich jak codejams, gamejams; ponadto uważamy, że
- każda inicjatywa związana z wolnym oprogramowaniem jest warta wsparcia),
- - cyberbezpieczeństwo (do pełnego sukcesu w CTFach brakuje nam niskopoziomowej wiedzy związanej z binary exploitation, 
- reverse engineeringiem, etc.),
- - ogólnie pojęta informatyka (jesteśmy otwarci na nowe pomysły, serio:-) ).
+## Darowizny
 
-# Współpraca z firmami
-Jesteśmy otwarci na wszelkie formy współpracy oraz wsparcia, o ile nie wpłyną one na swobodę naszych działań.
-Przykładowymi formami wsparcia naszej organizacji są:
- - darowizny,
- - sponsoring,
- - udostępnienie pomieszczeń, urządzeń i zasobów.
-
-Zapraszamy do kontaktu.
-
-# Darowizny
-Zachęcamy również do przekazywania darowizn na rzecz naszego stowarzyszenia.
+Chcesz dorzucić parę złotych do wspólnego kotła? Możesz wesprzeć nasze działania darowizną na cele statutowe.
 
 > 56 1600 1462 1892 8003 2000 0001 (BNP Paribas)  
 > Inner Savages  
@@ -39,6 +21,18 @@ Zachęcamy również do przekazywania darowizn na rzecz naszego stowarzyszenia.
 >
 > Tytułem: Darowizna na cele statutowe
 
-Zgodnie z obowiązującym prawem darczyńcami mogą być osoby fizyczne i osoby prawne (firmy, spółki itd.).
-Od przekazanych darowizn przysługuje też odliczenie podatkowe (na formularzach PIT-O dla osób fizycznych oraz CIT-D dla
-osób prawnych). W zamian oferujemy dobre słowo i podziękowania opublikowane na naszej stronie.
+Darowiznę można odliczyć od podatku na zasadach i w granicach określonych obowiązującymi przepisami.
+
+## Inne formy wsparcia
+
+Nie wszystko da się przeliczyć na pieniądze.
+
+Masz sprzęt, zasoby, infrastrukturę albo ciekawy pomysł na wspólne przedsięwzięcie?
+
+Odezwij się. Jeśli temat nas zainteresuje, chętnie pogadamy.
+
+Kontakt: [zarzad@innersavages.pl](mailto:zarzad@innersavages.pl)
+
+## Na własnych zasadach
+
+Jesteśmy otwarci na wszelkie formy współpracy oraz wsparcia, o ile nie wpłyną one na swobodę naszych działań.

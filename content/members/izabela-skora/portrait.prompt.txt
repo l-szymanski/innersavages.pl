@@ -1,0 +1,13 @@
+Tool: built-in image_gen (edit)
+Accepted master: portrait.png
+Reusable description of the approved portrait; use portrait.png as the identity and style reference for future edits.
+
+Use case: identity-preserve / stylized-concept.
+Asset type: square illustrated member portrait for Inner Savages.
+Subject: Izabela Skora as a woman with restrained orc accents. Mostly human, gentle feminine facial proportions: softly shaped nose, natural cheekbones, oval face and gentle chin, attentive amber eyes and a subtle asymmetric friendly smile. Shoulder-length brown hair with warm copper ends and parted fringe. Modest pointed ears partly framed by the hair. Two small lower canine tusks emerge naturally from inside a slightly parted mouth, behind the lower lip, never through lip or cheek skin.
+Skin: warm sandy-taupe complexion with a subtle muted olive undertone, natural fine painterly texture. Neck and hands match the warmer face. Avoid strong green color, coarse reptilian texture, exaggerated heavy brow ridges, a broad flat nose or blocky jaw.
+Clothing: plain graphite crew-neck T-shirt under a loose dark charcoal knitted cardigan, natural drape and subtle worn knit texture. No armor or technical jacket.
+Prop and pose: gently manipulating a small mechanical disentanglement puzzle made of one dark-steel ring interlocked with a recognizable Greek psi-shaped metal piece (ψ). The psi has a rounded U-shaped bowl, upward side arms and a central vertical stem extending above and below the bowl. Both hands low in front of her chest, natural finger placement, keeping the symbol readable. Worn matte machined steel with sandy highlights and subtle engineered openings. Hand-sized puzzle subordinate to the face, no chain or padlock. The symbol is a physical part of the puzzle, not floating text or a hologram. No notebook.
+Composition: one character, centered head and upper torso at a relaxed slight three-quarter angle. Full shoulder-length hair and both hands comfortably inside a square 1:1 frame. Readable at avatar size.
+Style and backdrop: detailed gritty dark industrial character illustration, deep charcoal shadows, warm orange rim light along the hair, sandy highlights, matte fabric and restrained grunge. Opaque dark textured wall background.
+Avoid: notebooks, medical branding, computers, technical equipment, weapons, armor, fantasy ornaments, teeth rooted in skin, scars, warpaint, exaggerated makeup, glamour airbrushing, readable text, logos, watermarks, decorative frames, extra people, extra hands or fingers.

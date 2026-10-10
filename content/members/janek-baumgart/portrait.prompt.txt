@@ -1,0 +1,18 @@
+Portret Janka Baumgarta — zaakceptowana wersja główna
+Narzędzie: wbudowany imagegen.
+Wynik: portrait.png (zaakceptowany wariant 2, przeniesiony bez zmian).
+Referencje tożsamości (niepublikowane na stronie):
+- /tmp/innersavages-janek-reference.jpg — zdjęcie LinkedIn dostarczone przez użytkownika.
+- /home/luc/Downloads/hacknation2025/signal-2025-12-07-12-58-46-792_002.jpg — mężczyzna w białym swetrze, czwarty od lewej w grupie na pierwszym planie. Pozostałe osoby należy zignorować.
+
+Use case: stylized-concept / identity-preserve.
+Asset type: square illustrated member portrait for Inner Savages.
+Subject: Janek Baumgart as a recognizable intelligent orc scientist, smiling with quiet satisfaction because his absurd AI experiment worked. Preserve his individual head shape, dark upward-swept short hair, full neat short beard and moustache, natural nose and facial proportions. Desaturated olive-green skin, moderately pointed ears, warm amber eyes and small ivory lower canine tusks originating inside the mouth with roots behind the lower lip. No monstrous jaw or exaggerated brow.
+Glasses: moderately thick dark gunmetal/charcoal frames, rounded rectangular lenses matching the reference shape, transparent lenses with clearly visible eyes. Not bulky goggles.
+Clothing: slightly worn light ivory knitted crewneck sweater with ribbed collar and cuffs. No suit, lab coat, badge or lanyard.
+Pose: seated at a desk, slight three-quarter angle, hand resting beneath chin, relaxed pleased smile. Face remains the focal point.
+External brain: large stylized brain with rounded folds inside a transparent glass capsule with a worn steel industrial base and top, restrained warm amber underlighting. Fictional external cognitive accelerator, clean and without gore. Capsule sits on the desk beside Janek. A coherent thin cable connects it to a small external neural interface at his temple near the glasses arm, on the right side of the image. Another cable connects to a monitor behind the capsule showing an orange neural-network graph.
+Smoke: delicate narrow wisp of pale gray smoke emerging precisely from the contact between the temple connector and head, curling gently upward alongside the hair. Subtle amusing overheating, no flames, burns, injury or obscured face.
+Background: dark improvised research room with worn books, drawings and technical details. One broad upright book in the upper-left shelf has the exact sandy-beige stamped title "ULTIMATE GUIDE TO SLOP", stacked in short lines: ULTIMATE / GUIDE / TO / SLOP. Worn dark spine, naturally integrated and subordinate to the portrait.
+Style: detailed gritty dark industrial illustration; charcoal room, sandy highlights, restrained warm orange rim lighting, textured skin, worn steel and knitted fabric. Square 1:1 opaque image, room above hair and ears.
+Avoid: extra people, giant brain inside an open skull, gore, large smoke clouds, fire, monstrous anatomy, fantasy armor, exaggerated neon, extra slogans, watermark or decorative frame.

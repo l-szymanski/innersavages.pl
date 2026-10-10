@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="pack">
+    <a class="pack-profile__back" href="{{ "/members/#pack-friends-heading" | relURL }}"><span aria-hidden="true">←</span> Wataha</a>
+    <header class="pack__header">
+      <p class="pack__eyebrow">INNER SAVAGES</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}<div class="pack__intro">{{ . }}</div>{{ end }}
+    </header>
+    <section class="pack__section" aria-label="Przyjaciele watahy">
+      <div class="pack__grid">
+        {{ range .RegularPages.ByTitle }}{{ partial "members/card.html" (dict "page" . "board" false) }}{{ end }}
+      </div>
+    </section>
+  </div>
+{{ end }}

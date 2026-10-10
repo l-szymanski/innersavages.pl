@@ -3,6 +3,12 @@ title: "HackYeah 2018"
 date: 2018-11-24
 endDate: 2018-11-25
 category: hackathon
+participants:
+  - "/members/jakub-skory"
+  - "/members/janek-baumgart"
+  - "/friends/pawel-sz"
+  - "/members/jakub-zieba"
+  - "/members/mateusz-borowski"
 location: "Warszawa (Global Expo)"
 ---
 

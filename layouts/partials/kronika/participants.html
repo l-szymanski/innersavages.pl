@@ -1,0 +1,25 @@
+{{- $profiles := partialCached "kronika/validate-participants.html" . .File.Path -}}
+{{- with $profiles -}}
+  <section class="event-participants" aria-labelledby="event-participants-title">
+    <h2 id="event-participants-title">Skład watahy</h2>
+    <ul class="event-participants__list">
+      {{- range . -}}
+        {{- $profile := . -}}
+        <li>
+          <a class="event-participant" href="{{ .RelPermalink }}">
+            {{ partial "members/portrait.html" (dict "page" . "variant" "participant") }}
+            <span class="event-participant__identity">
+              {{- with .Params.nickname -}}
+                <span class="event-participant__name">{{ . }}</span>
+                <span class="event-participant__caption">{{ $profile.Title }}</span>
+              {{- else -}}
+                <span class="event-participant__name">{{ .Title }}</span>
+              {{- end -}}
+            </span>
+            <span class="event-participant__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      {{- end -}}
+    </ul>
+  </section>
+{{- end -}}

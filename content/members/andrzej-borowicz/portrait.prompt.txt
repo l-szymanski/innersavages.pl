@@ -1,0 +1,13 @@
+Tool: built-in image_gen
+Accepted master: portrait.png
+Reusable prompt describing the approved portrait. For edits, use portrait.png as the identity and style reference.
+
+Use case: identity-preserve / stylized-concept.
+Asset type: square illustrated orc member portrait for Inner Savages.
+Subject: a cheerful, mischievous male orc with short upward-styled light-brown hair, closely cropped sides, round dark eyeglass frames and light facial stubble. His face is clearly orc-like: a wide heavy lower jaw, strong chin, broad nose with a slightly flatter bridge, prominent cheekbones, thick lips, heavy angular brow ridges and large sharply pointed ears. Skin is muted olive-green/gray with rough leathery texture. His eyes have a restrained orange/amber ember glow visible behind clear round lenses.
+Expression and anatomy: a broad open orc grin with robust slightly irregular teeth. Exactly two enlarged lower canine teeth are rooted in the lower jaw inside the mouth, visibly continuous with the lower gumline and lower dental row. They rise upwards out of the mouth past the lip and in front of the upper lip. Their bases are inside the mouth, never on cheek skin or floating beside the lips. No gore or damaged skin.
+Face paint: rough angular charcoal-black strokes across the cheekbones, with worn ochre-orange paint marks following the facial planes. The paint is matte, rubbed and handmade. Keep the eyes, glasses, grin and skin readable. No real-world cultural symbols, logos, runes or words.
+Clothing: a worn industrial hacker hoodie with a substantial hood, reinforced seams, sturdy metal zipper, subtle charcoal panels and drawstrings. No new logos, company patches, organizational ranks, jewelry or handheld props.
+Composition: one orc, head and upper torso, centered square portrait. Keep the hair silhouette, pointed ears and head inside the frame. Natural broad body proportions and readable glasses.
+Style and lighting: detailed gritty character illustration, angular shading, worn material textures, sandy/steel highlights, dark charcoal grunge backdrop, warm orange rim light and soft frontal illumination. Match the existing Inner Savages portrait collection. Opaque background, 1:1 aspect ratio.
+Avoid: an ordinary human face with attached tusks, cheek-mounted or floating teeth, bald head, long hair, full beard, cap, rectangular glasses, weapons, cyberdeck, fantasy armor spikes, extra people, extra limbs, excessive neon, green Matrix code, text, slogans, watermark or decorative frame.

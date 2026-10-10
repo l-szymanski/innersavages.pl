@@ -11,16 +11,7 @@
       {{ range $events }}
         {{ $event := . }}
         {{ range .Params.trophies }}
-          <article class="treasury-item" data-artifact="{{ .artifact | default "default" }}">
-            <div class="treasury-item__artifact">{{ partial "trofea/artifact.html" .artifact }}</div>
-            <div class="treasury-item__body">
-              <p class="treasury-item__date">{{ partial "kronika/date-range.html" $event }}</p>
-              <h2>{{ with .label }}{{ . }}{{ else }}Osiągnięcie{{ end }}</h2>
-              <a class="treasury-item__event" href="{{ $event.RelPermalink }}">{{ $event.Title }}</a>
-              {{ with .team }}<p><span>Zespół</span>{{ . }}</p>{{ end }}
-              {{ with .project }}<p><span>Projekt</span>{{ . }}</p>{{ end }}
-            </div>
-          </article>
+          {{ partial "trofea/item.html" (dict "event" $event "trophy" . "variant" "gallery") }}
         {{ end }}
       {{ end }}
     </div>

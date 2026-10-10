@@ -10,7 +10,10 @@ disableKinds = ["taxonomy", "term"]
   author = "Stowarzyszenie Inner Savages"
   description = "Strona Stowarzyszenia"
   themeColor = "#0a0c0d"
-  googleAnalyticsID = "G-XZGX687LN2"
+
+[params.cloudflareAnalytics]
+  enabled = true
+  token = "b5fdbf2933794758a12bcc1b327cd58c"
 
 [markup]
   [markup.goldmark]

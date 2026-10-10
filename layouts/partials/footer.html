@@ -15,7 +15,7 @@
       <a href="{{ "/kronika/" | relURL }}">Kronika</a>
       <a href="{{ "/trofea/" | relURL }}">Trofea</a>
       <a href="{{ "/members/" | relURL }}">Wataha</a>
-      <a href="{{ "/news/" | relURL }}">Aktualności</a>
+      <a href="{{ "/news/" | relURL }}">Archiwum</a>
     </nav>
 
     <div class="site-footer__contact">
@@ -36,6 +36,11 @@
       <a href="{{ "/statut/" | relURL }}">Statut</a>
       <a href="{{ "/privacypolicy/" | relURL }}">Polityka prywatności</a>
       <a href="{{ "/contact/" | relURL }}">Dane kontaktowe</a>
+      {{ $analytics := partialCached "analytics-config.html" . }}
+      {{ if $analytics.active }}
+        <button type="button" class="analytics-settings" data-analytics-settings
+          aria-controls="analytics-consent" aria-expanded="false" hidden>Ustawienia prywatności</button>
+      {{ end }}
     </nav>
   </div>
 </footer>

@@ -2,6 +2,14 @@
 title: "Zebranie założycielskie stowarzyszenia"
 date: 2020-08-07
 category: registration
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/monika-szymanska"
+  - "/members/jakub-skory"
+  - "/members/izabela-skora"
+  - "/members/jakub-zieba"
+  - "/members/piotr-olszewski"
+  - "/members/maciej-kopczynski"
 location: "Bydgoszcz"
 ---
 

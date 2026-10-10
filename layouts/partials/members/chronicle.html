@@ -1,0 +1,36 @@
+{{- $person := . -}}
+{{- $events := slice -}}
+{{- with site.GetPage "/kronika" -}}
+  {{- range .RegularPages.ByDate.Reverse -}}
+    {{- $event := . -}}
+    {{- range partialCached "kronika/validate-participants.html" . .File.Path -}}
+      {{- if eq .File.Path $person.File.Path -}}
+        {{- $events = $events | append $event -}}
+        {{- break -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with $events -}}
+  <section class="profile-chronicle" aria-labelledby="profile-chronicle-title">
+    <header class="profile-chronicle__header">
+      <h2 id="profile-chronicle-title">Z Kroniki</h2>
+      <a class="profile-chronicle__all" href="{{ "/kronika/" | relURL }}">Cała Kronika <span aria-hidden="true">→</span></a>
+    </header>
+    <ol class="profile-chronicle__list">
+      {{- range . -}}
+        <li>
+          <a class="profile-chronicle__event" href="{{ .RelPermalink }}">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ partial "kronika/date-range.html" . }}</time>
+            {{ partial "kronika/icon.html" .Params.category }}
+            <span class="profile-chronicle__identity">
+              <span class="profile-chronicle__category">{{ partial "kronika/category-label.html" .Params.category }}</span>
+              <span class="profile-chronicle__name">{{ .Title }}</span>
+            </span>
+            <span class="profile-chronicle__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      {{- end -}}
+    </ol>
+  </section>
+{{- end -}}

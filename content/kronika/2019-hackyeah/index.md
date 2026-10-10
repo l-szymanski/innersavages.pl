@@ -3,6 +3,16 @@ title: "HackYeah 2019"
 date: 2019-09-14
 endDate: 2019-09-15
 category: hackathon
+# Skład niepełny; tylko osoby wymienione w opisie.
+participants:
+  - "/members/monika-szymanska"
+  - "/members/izabela-skora"
+  - "/members/lukasz-szymanski"
+  - "/members/jakub-skory"
+  - "/members/jakub-zieba"
+  - "/members/piotr-olszewski"
+  - "/members/maciej-kopczynski"
+  - "/members/janek-baumgart"
 location: "Nadarzyn (Ptak Warsaw Expo)"
 ---
 

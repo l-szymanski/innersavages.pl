@@ -1,0 +1,43 @@
+{{- $page := . -}}
+{{- $perks := $page.Params.perks -}}
+{{- $limit := 10 -}}
+{{- with $perks -}}
+  {{- if gt (len .) $limit -}}
+    {{- warnf "Wataha: %s ma %d perków; wyświetlam tylko pierwsze %d" $page.File.Path (len .) $limit -}}
+  {{- end -}}
+  {{- $valid := slice -}}
+  {{- range first $limit . -}}
+    {{- $kind := printf "%T" .level -}}
+    {{- $numeric := in (slice "int" "int64" "uint" "uint64" "float32" "float64") $kind -}}
+    {{- $validLevel := false -}}
+    {{- if $numeric -}}
+      {{- $level := float .level -}}
+      {{- if and (ge $level 0.0) (le $level 10.0) -}}
+        {{- /* Valid half-points become exact integers; never round invalid levels. */ -}}
+        {{- $halfPoints := mul $level 2 -}}
+        {{- $validLevel = eq $halfPoints (float (int $halfPoints)) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if and .name $validLevel -}}
+      {{- $valid = append . $valid -}}
+    {{- else -}}
+      {{- warnf "Wataha: pomijam nieprawidłowy perk %q w %s (poziom: %v, typ: %s; wymagane: nazwa oraz liczba 0–10 z krokiem 0,5)" (.name | default "") $page.File.Path .level $kind -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $valid -}}
+    <section class="pack-stats" aria-labelledby="pack-stats-heading">
+      <h2 id="pack-stats-heading">Perki // Stats</h2>
+      <ul>
+        {{- range . -}}
+          <li class="pack-perk" aria-label="{{ .name }}, poziom {{ replace (printf "%v" .level) "." "," }} z 10">
+            <div class="pack-perk__heading"><span>{{ .name }}</span></div>
+            <span class="pack-perk__segments" aria-hidden="true">
+              {{- $activeSegments := int (mul (float .level) 2) -}}
+              {{- range seq 20 -}}<span class="{{ if le . $activeSegments }}is-active{{ end }}"></span>{{- end -}}
+            </span>
+          </li>
+        {{- end -}}
+      </ul>
+    </section>
+  {{- end -}}
+{{- end -}}

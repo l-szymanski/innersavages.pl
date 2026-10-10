@@ -1,0 +1,16 @@
+Tool: built-in image_gen (edit)
+Accepted master: portrait.png
+Reusable description of the approved portrait; use portrait.png as the identity and style reference for future edits.
+
+Use case: identity-preserve / stylized-concept.
+Asset type: square illustrated member portrait for Inner Savages.
+Subject: Jakub Skory as a distinctly orc-like hacker, with tousled wavy dark hair, rectangular thin metal glasses, a thick bushy beard and moustache, a slightly amused smile, broad jaw and nose, strong brow ridges, olive-gray textured skin, pointed ears and restrained amber-orange eyes.
+Mouth anatomy: slightly open mouth with a visible dark oral opening and two modest enlarged lower canine teeth rooted in the lower gumline inside the mouth. The tooth bases sit behind the lower lip, which curves naturally around them; no teeth pierce lip or cheek skin.
+Clothing: worn charcoal short-sleeved T-shirt with natural irregular folds, a slightly stretched uneven neckline and worn seams. One small frayed hole in the upper chest, away from the beard and inscription, shows a little olive skin. A realistically sized sandy-gray monospace print sits lower on the chest, well below the collar and beard. Its exact two-line inscription is:
+$ cd /pub;
+$ more b33r;
+Both lines start with a literal dollar sign and end with a semicolon; "b33r" contains two numeral 3 characters. The print is visibly washed out with fine cracks, missing flecks of ink, softened edges and reduced ink opacity. The foreground laptop naturally obscures the bottom edge of part of the second line; the wording and meaning remain recognizable. The first line is fully visible.
+Scene: seated at a technical workbench, an open worn laptop low in the foreground, a few practical cables. On the visible outer laptop lid, a small worn sandy-gray rectangular sticker bears the exact dark monospace text "q84fh", following the surface perspective and warm lighting. It sits to the left of the existing circular orc-head decal. A weathered rectangular fire procedure sign hangs behind one shoulder. Red header with white flame and exact text "In case of fire"; off-white panel with black symbols and three lines: "1. git commit", "2. git push", "3. leave building". The sign is secondary to the face.
+Composition: one character, centered head and upper torso, room for hair and ears. Face and glasses remain dominant; the shirt print is large enough to read despite slight foreground occlusion. The laptop sticker is fully visible. Square 1:1, opaque background.
+Style: detailed gritty industrial character illustration, deep charcoal shadows, angular shapes, warm orange rim lighting, sandy highlights, worn fabric and metal, restrained grunge.
+Avoid: fantasy armor, jacket, cape, warpaint, cyber-monocle, weapons, facial spikes, teeth rooted in skin, extra people or limbs, LinkedIn frame or OPEN TO WORK text, excessive neon, green Matrix code, new slogans, watermarks and decorative borders.

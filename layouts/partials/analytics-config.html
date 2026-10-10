@@ -1,0 +1,14 @@
+{{- $config := site.Params.cloudflareAnalytics | default dict -}}
+{{- $active := false -}}
+{{- $token := "" -}}
+{{- if eq $config.enabled true -}}
+  {{- if eq (printf "%T" $config.token) "string" -}}
+    {{- $token = strings.TrimSpace $config.token -}}
+  {{- end -}}
+  {{- if $token -}}
+    {{- $active = true -}}
+  {{- else -}}
+    {{- warnf "Cloudflare Web Analytics: enabled = true, ale brak tokenu. Analityka i mechanizm zgody są wyłączone." -}}
+  {{- end -}}
+{{- end -}}
+{{- return (dict "active" $active "token" $token) -}}

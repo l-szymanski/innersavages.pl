@@ -3,6 +3,10 @@ title: "SEC-T CTF 2019"
 date: 2019-09-18
 endDate: 2019-09-19
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/jakub-zieba"
+  - "/friends/radek-g"
 location: "Online"
 links:
   - label: "Profil zespołu w CTFTime"

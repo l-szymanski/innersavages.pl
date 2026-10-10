@@ -10,8 +10,7 @@
       <a class="{{ if eq .RelPermalink "/co-robimy/" }}is-active{{ end }}" href="{{ "/co-robimy/" | relURL }}">Co robimy</a>
       <a class="{{ if eq .Section "kronika" }}is-active{{ end }}" href="{{ "/kronika/" | relURL }}">Kronika</a>
       <a class="{{ if eq .Section "trofea" }}is-active{{ end }}" href="{{ "/trofea/" | relURL }}">Trofea</a>
-      <a href="{{ "/members/" | relURL }}">Wataha</a>
-      <a class="{{ if eq .Section "news" }}is-active{{ end }}" href="{{ "/news/" | relURL }}">Aktualności</a>
+      <a class="{{ if in (slice "members" "friends") .Section }}is-active{{ end }}" href="{{ "/members/" | relURL }}">Wataha</a>
     </nav>
 
     <div class="is-header__actions">

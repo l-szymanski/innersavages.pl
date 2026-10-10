@@ -1,0 +1,40 @@
+{{- $label := .label | default "Osiągnięcie" -}}
+{{- $title := $label -}}
+{{- $detail := "" -}}
+
+{{- with .place -}}
+  {{- $title = printf "%v. miejsce" . -}}
+  {{- $detail = strings.TrimSpace (strings.TrimPrefix $title $label) -}}
+
+  {{- $exAequo := strings.TrimPrefix "ex aequo w kategorii " $detail -}}
+  {{- $category := strings.TrimPrefix "w kategorii " $detail -}}
+  {{- if ne $exAequo $detail -}}
+    {{- $detail = printf "ex aequo · %s" $exAequo -}}
+  {{- else if ne $category $detail -}}
+    {{- $detail = printf "Kategoria %s" $category -}}
+  {{- else -}}
+    {{- $detail = strings.TrimPrefix "— " $detail -}}
+  {{- end -}}
+{{- else -}}
+  {{- $finalist := strings.TrimPrefix "Finalista " $label -}}
+  {{- $topFive := strings.TrimPrefix "Finał (top 5) " $label -}}
+  {{- if ne $finalist $label -}}
+    {{- $title = "Finalista" -}}
+    {{- $challenge := strings.TrimPrefix "wyzwania " $finalist -}}
+    {{- if ne $challenge $finalist -}}
+      {{- $detail = printf "Wyzwanie %s" $challenge -}}
+    {{- else -}}
+      {{- $detail = $finalist -}}
+    {{- end -}}
+  {{- else if ne $topFive $label -}}
+    {{- $title = "Finał (top 5)" -}}
+    {{- $category := strings.TrimPrefix "kategorii " $topFive -}}
+    {{- if ne $category $topFive -}}
+      {{- $detail = printf "Kategoria %s" $category -}}
+    {{- else -}}
+      {{- $detail = $topFive -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "title" $title "detail" $detail) -}}

@@ -1,0 +1,12 @@
+Tool: built-in image_gen (generate)
+Output: portrait.png
+Symbolic fictional goblin avatar; not a photographic likeness or a statement about this person's appearance, profession or character.
+
+Use case: stylized-concept.
+Asset type: square symbolic goblin avatar for the Friends gallery of the Polish hackers collective Inner Savages.
+Create one fictional goblin, NOT an orc and NOT a likeness of a real person. This is an imaginative symbolic avatar; do not portray a real friend's known appearance, profession or biography.
+Character anatomy: wiry narrow shoulders, angular small goblin face, oversized long pointed ears, olive-gray skin, clever amber eyes, slightly mischievous friendly expression. Smaller and more nimble than the broad muscular orc members, no huge jaw tusks or hulking build.
+Style: detailed gritty dark industrial character illustration, angular strong forms, matte charcoal clothes and backdrop, worn metal and fabric, sandy highlights, subdued warm orange rim light, restrained grunge. Match the established Inner Savages portraits' craftsmanship. Face is the dominant element, not equipment.
+Composition: a single centered head-and-upper-torso portrait with comfortable room around head and ears in a 1:1 square. Full face and both ears visible, opaque dark workshop backdrop. Readable at avatar size.
+Avoid: text, labels, slogans, logos, name inscriptions, charts with numbers, watermarks, decorative frame, weapons, blood, medieval armor, magical runes, fantasy spikes, excessive neon, Matrix code, caricatures of ethnicity, extra people or limbs. No UI mockup or website screenshot.
+Individual design variation: a gray-olive goblin with a very short rusty hair crest, broad expressive eyebrows, a slightly crooked long nose and an open cheerful grin showing small normal teeth, no large tusks. Oversized pointed ears angle upward. Worn charcoal zip hoodie over a dark plain T-shirt with no print, unbranded small over-ear headphones resting around the neck. No glasses. Dark workshop backdrop with dim cable hooks and a soft amber practical light. Keep the slim goblin anatomy and avoid any orc warrior likeness.

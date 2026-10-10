@@ -1,0 +1,35 @@
+{{- $page := .page -}}
+{{- $variant := .variant | default "card" -}}
+{{- $portrait := false -}}
+{{- with $page.Params.portrait -}}
+  {{- $portrait = $page.Resources.GetMatch . -}}
+  {{- if not $portrait -}}
+    {{- warnf "Wataha: brak portretu %q dla %s" . $page.File.Path -}}
+  {{- end -}}
+{{- end -}}
+<div class="pack-portrait pack-portrait--{{ $variant }}">
+  {{- with $portrait -}}
+    {{- $smallWidth := 320 -}}
+    {{- $largeWidth := 640 -}}
+    {{- if eq $variant "profile" -}}
+      {{- $smallWidth = 640 -}}
+      {{- $largeWidth = 960 -}}
+    {{- else if eq $variant "participant" -}}
+      {{- $smallWidth = 96 -}}
+      {{- $largeWidth = 192 -}}
+    {{- end -}}
+    {{- if lt .Width $smallWidth -}}{{ $smallWidth = .Width }}{{- end -}}
+    {{- if lt .Width $largeWidth -}}{{ $largeWidth = .Width }}{{- end -}}
+    {{- $small := .Resize (printf "%dx webp q82" $smallWidth) -}}
+    {{- $large := .Resize (printf "%dx webp q82" $largeWidth) -}}
+    <img src="{{ $small.RelPermalink }}"
+      {{- if gt $large.Width $small.Width }} srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w" sizes="{{ if eq $variant "profile" }}(max-width: 740px) 100vw, 400px{{ else if eq $variant "participant" }}64px{{ else }}(max-width: 600px) 100vw, (max-width: 900px) 50vw, (max-width: 1160px) 33vw, 25vw{{ end }}"{{ end }}
+      width="{{ $small.Width }}" height="{{ $small.Height }}"
+      alt="{{ if eq $variant "profile" }}Portret: {{ $page.Title }}{{ end }}"
+      loading="{{ if eq $variant "profile" }}eager{{ else }}lazy{{ end }}" decoding="async">
+  {{- else -}}
+    <span class="pack-portrait__fallback" aria-hidden="true">
+      <span class="pack-portrait__fallback-mark"><span>IS</span></span>
+    </span>
+  {{- end -}}
+</div>

@@ -3,6 +3,8 @@ title: "5. Bydgoski Hackathon"
 date: 2022-03-25
 endDate: 2022-03-26
 category: hackathon
+# Składu nie udało się odtworzyć; pusta lista nie oznacza braku udziału.
+participants: []
 location: "Młyny Rothera, Bydgoszcz"
 organizer: "Bydgoski Klaster Informatyczny"
 links:

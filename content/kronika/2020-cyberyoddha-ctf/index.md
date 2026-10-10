@@ -3,6 +3,8 @@ title: "CyberYoddha CTF 2020"
 date: 2020-10-30
 endDate: 2020-11-01
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
 location: "Online"
 ---
 

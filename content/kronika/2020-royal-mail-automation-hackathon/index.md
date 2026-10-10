@@ -3,6 +3,11 @@ title: "Royal Mail Group Automation Hackathon with Red Hat Ansible"
 date: 2020-03-09
 endDate: 2020-03-12
 category: hackathon
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/jakub-skory"
+  - "/members/maciej-kopczynski"
+  - "/members/piotr-olszewski"
 location: "Londyn"
 ---
 

@@ -1,0 +1,21 @@
+{{- $page := .page -}}
+{{- $board := .board -}}
+<a class="pack-card{{ if $board }} pack-card--board{{ end }}" href="{{ $page.RelPermalink }}">
+  {{ partial "members/portrait.html" (dict "page" $page "variant" "card") }}
+  <div class="pack-card__body">
+    {{- if $board -}}
+      {{- range $page.Params.roles -}}
+        {{- if eq .body "board" -}}
+          <p class="pack-card__role">{{ .position | default "Zarząd" }}</p>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{ with $page.Params.nickname }}
+      <h3>{{ . }}</h3>
+      <p class="pack-card__nickname">{{ $page.Title }}</p>
+    {{ else }}
+      <h3>{{ $page.Title }}</h3>
+    {{ end }}
+    {{ partial "members/tagline.html" (dict "text" $page.Params.tagline "variant" "card") }}
+  </div>
+</a>

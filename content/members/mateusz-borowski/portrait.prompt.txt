@@ -1,0 +1,16 @@
+Portret Mateusza Borowskiego — zaakceptowana wersja główna
+Narzędzie: wbudowany imagegen.
+Wynik: portrait.png (zaakceptowany wariant 5, przeniesiony bez zmian).
+Referencje tożsamości, niepublikowane na stronie:
+- Zdjęcie LinkedIn dostarczone przez użytkownika: /tmp/innersavages-mateusz-reference.jpg
+- /home/luc/Downloads/bkihack2026/signal-2026-03-28-10-33-20-740_002.jpg — mężczyzna siedzący z przodu po lewej w kraciastej koszuli.
+
+Use case: stylized-concept / identity-preserve.
+Asset type: square illustrated member portrait for Inner Savages.
+Subject: Mateusz Borowski as a friendly, recognizable orc. Preserve the original rounded bald head, normal brow, nose and jaw proportions, slim rectangular glasses, short dark chin/jaw stubble and close moustache. Clearly muted olive-green skin on face, scalp, ears and neck. Pointed ears, calm amber eyes and a thin healed pale scar on the bald scalp. Do not exaggerate the skull, brow or jaw into a monstrous face.
+Expression: relaxed small nearly closed smile, no forced toothy grin or open jaw. Two restrained ivory lower canine tusks rise from INSIDE the mouth behind the lower lip. Lip skin naturally occludes the tooth roots. No teeth growing from lip or cheek skin.
+Clothing: open worn red-and-charcoal plaid flannel shirt over a dark T-shirt. A large centered sandy-beige silhouette of a fat round cat with tiny paws, small ears and a curved tail, followed by the exact lowercase text "chonker!". Slightly faded distressed screenprint; keep the complete graphic visible.
+Background: dark board-game/podcast room, shelf with recognizable red/orange CATAN box and exact yellow title "CATAN", other subdued board-game boxes. Small black podcast microphone on an articulated arm at the side.
+On the wall to the right of his head, subtle crude public-restroom-style graffiti: a crooked hand-scrawled gallows with the exact handwritten word "SCOM" hanging beneath its rope. No rectangular plaque or polished lettering, no human or animal figure. Nearby the exact lowercase text "golang4life" scratched into the wall in uneven slender incised strokes. Faded low-contrast sandy-gray marks, clear of head and microphone.
+Composition: centered head and upper torso, gentle three-quarter angle, square 1:1 opaque image. Detailed gritty dark industrial illustration, charcoal backdrop, sandy highlights, restrained warm orange rim lighting, worn cloth and skin texture.
+Avoid: actual cat, extra people, fantasy armor, grotesque face, strong neon, computers, workshop pipes or hanging bulb, added slogans, watermarks or decorative border.

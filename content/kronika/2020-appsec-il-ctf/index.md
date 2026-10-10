@@ -3,6 +3,10 @@ title: "AppSec-IL 2020 CTF"
 date: 2020-10-24
 endDate: 2020-10-26
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/maciej-kopczynski"
+  - "/members/jakub-zieba"
 location: "Online"
 ---
 

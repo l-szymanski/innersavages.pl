@@ -29,6 +29,8 @@
       {{ .Content }}
     </div>
 
+    {{ partial "kronika/participants.html" . }}
+
     {{ with .Params.links }}
       <section class="event-page__links" aria-labelledby="event-links-title">
         <h2 id="event-links-title">Linki</h2>
@@ -43,14 +45,7 @@
         <h2 id="event-trophies-title">Trofea</h2>
         <div class="event-trophy-list">
           {{ range . }}
-            <article class="event-trophy" data-artifact="{{ .artifact | default "default" }}">
-              {{ partial "trofea/artifact.html" .artifact }}
-              <div>
-                <h3>{{ with .label }}{{ . }}{{ else }}Osiągnięcie{{ end }}</h3>
-                {{ with .team }}<p><span>Zespół</span>{{ . }}</p>{{ end }}
-                {{ with .project }}<p><span>Projekt</span>{{ . }}</p>{{ end }}
-              </div>
-            </article>
+            {{ partial "trofea/item.html" (dict "event" $ "trophy" .) }}
           {{ end }}
         </div>
       </section>

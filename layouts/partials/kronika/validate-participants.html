@@ -1,0 +1,30 @@
+{{- /* Resolve content paths to profiles; warn and skip invalid references. */ -}}
+{{- $event := . -}}
+{{- $profiles := slice -}}
+{{- if isset .Params "participants" -}}
+  {{- if not (reflect.IsSlice .Params.participants) -}}
+    {{- warnf "Kronika: participants w %s musi być listą ścieżek do profili" .File.Path -}}
+  {{- else -}}
+    {{- $seen := slice -}}
+    {{- range .Params.participants -}}
+      {{- if ne (printf "%T" .) "string" -}}
+        {{- warnf "Kronika: nieprawidłowy uczestnik w %s: %v; wymagane /members/nazwa-profilu lub /friends/nazwa-profilu" $event.File.Path . -}}
+      {{- else if not (findRE "^/(members|friends)/[^/]+$" .) -}}
+        {{- warnf "Kronika: nieprawidłowa ścieżka uczestnika %q w %s; wymagane /members/nazwa-profilu lub /friends/nazwa-profilu" . $event.File.Path -}}
+      {{- else if in $seen . -}}
+        {{- warnf "Kronika: powtórzony uczestnik %q w %s" . $event.File.Path -}}
+      {{- else -}}
+        {{- $seen = $seen | append . -}}
+        {{- $profile := site.GetPage . -}}
+        {{- if not $profile -}}
+          {{- warnf "Kronika: nie znaleziono profilu uczestnika %q z %s" . $event.File.Path -}}
+        {{- else if or (ne $profile.Kind "page") (not (in (slice "members" "friends") $profile.Section)) -}}
+          {{- warnf "Kronika: uczestnik %q z %s nie wskazuje indywidualnego profilu" . $event.File.Path -}}
+        {{- else -}}
+          {{- $profiles = $profiles | append $profile -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $profiles -}}

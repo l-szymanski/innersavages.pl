@@ -1,0 +1,12 @@
+Tool: built-in image_gen (generate)
+Output: portrait.png
+Symbolic fictional orc avatar; no photographic identity reference.
+
+Use case: stylized-concept.
+Asset type: square symbolic member portrait for the Polish hacker collective Inner Savages.
+Subject: one anonymous orc hacker, wearing a plain black hooded sweatshirt with the hood pulled forward so almost the entire face is concealed in deep shadow. This is a fictional avatar, not a likeness of a real person. No visible identifying human features.
+Pose and scene: seated and leaning forward in concentration at an open rugged unbranded laptop on a modest technical workbench, two natural large orc hands working the keyboard. The screen is angled toward the character; only a little warm amber terminal light leaks onto his fingers and underside of the hood. Laptop back visible to viewer in the lower foreground. Suggest solving security puzzles and Capture the Flag challenges through a few indistinct technical terminal reflections, without readable commands, statistics or real targets.
+Orc cues: substantial broad shoulders beneath soft fabric, olive-gray hands with thick knuckles, and extremely subtle small hints of lower tusks and pointed ears at the hood's shadowed edges. Keep these quiet. The obscured face, hunched working pose and black hoodie should read first. Not a goblin, skeleton or robotic helmet.
+Composition: centered head and upper torso in a 1:1 square; hood silhouette in upper center, laptop low in the foreground. Keep hood, hands and laptop comfortably inside frame. Face remains almost invisible, the head is not brightly lit. No other people.
+Style: detailed gritty dark industrial character illustration consistent with Inner Savages portraits: matte near-black charcoal fabric, sharp angular shadows, worn materials, sandy-steel highlights, subtle orange rim lighting and restrained grunge. Opaque dark workshop background with vague equipment outlines. Black hoodie must be distinguishable from backdrop without revealing the face.
+Avoid: corporate or government logos, flags, institution names, readable text, name inscriptions, personal details, fantasy armor, cape, skull mask, Guy Fawkes mask, weapons, blood, tattoos, glowing neon face, dramatic beams from eyes, green Matrix code rain, blue cyberpunk neon, lock icons floating in air, holograms, extra limbs or fingers, watermark or decorative frame.

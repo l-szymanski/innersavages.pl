@@ -32,3 +32,8 @@
 {{ end }}
 {{ $style := resources.Get "css/site.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+{{ $analytics := partialCached "analytics-config.html" . }}
+{{ if $analytics.active }}
+  {{ $consentStyle := resources.Get "css/analytics-consent.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $consentStyle.RelPermalink }}" integrity="{{ $consentStyle.Data.Integrity }}">
+{{ end }}

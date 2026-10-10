@@ -3,6 +3,9 @@ title: "TastelessCTF 2020"
 date: 2020-10-03
 endDate: 2020-10-05
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/jakub-zieba"
 location: "Online"
 ---
 

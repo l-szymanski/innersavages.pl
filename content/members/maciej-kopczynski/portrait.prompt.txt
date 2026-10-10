@@ -1,0 +1,14 @@
+Tool: built-in image_gen (edit)
+Accepted master: portrait.png
+Reusable description of the approved portrait; use portrait.png as the identity and style reference for future edits.
+
+Use case: identity-preserve / stylized-concept.
+Asset type: square illustrated member portrait for Inner Savages.
+Subject: Maciej Kopczyński as a completely bald male orc with a full, neat, relatively short dark beard following the jawline and a close moustache. A gently slim elongated face, straighter nasal bridge, strong orc brow ridges and cheekbones, muted olive-gray skin, pointed ears, modest lower canine tusks rooted inside the mouth. Narrowed amber-orange eyes, dry skeptical sideways gaze and faint ironic smirk.
+Piercing: a single slender dark polished steel industrial barbell across the recessed upper bowl of the visible ear on the left side of the image, below the pointed tip. It slopes from upper right near the head to lower left at the outside rim. The shaft pierces two separate cartilage rim walls. At the left end it enters a small skin opening and disappears through the cartilage; the raised rim occludes its terminal portion. That end's screw ball is on the back of the ear and FULLY HIDDEN from the viewer. Only the right end's small steel ball near the head is visible. No visible bead, blunt metal end or ball at the left puncture. No extra jewelry.
+Pose: seated at a compact workbench, one hand supporting the side of the head at the temple, the other operating a physical terminal keyboard in the lower foreground. Natural anatomy, only two hands.
+Clothing: a worn charcoal zip-up hoodie with the hood down, reinforced seams and understated zipper; no armor or logos.
+Scene: home LLM lab, open compact compute machine with large GPU cooling heatsinks and fans behind one shoulder, a few practical cables and small angled amber terminal showing training graphs and job queues. Functioning hardware and ongoing experiments, equipment secondary to the character.
+Composition: centered head and upper torso with slight three-quarter seated angle; keep full bald head, ears and hand details inside the 1:1 square frame. Opaque dark workshop backdrop.
+Style: detailed gritty industrial character illustration, angular shadows, worn materials, matte charcoal and black, sandy-steel highlights, restrained warm orange rim light and amber screen glow.
+Avoid: mugs, cups, weapons, cyber-monocle, glasses, extra piercings, long beard, braids, scalp hair, armor, branding, slogans, excessive neon, green Matrix code, floating holograms, extra people or limbs, watermarks and decorative borders.

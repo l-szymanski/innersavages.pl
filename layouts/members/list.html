@@ -1,0 +1,51 @@
+{{ define "main" }}
+  {{- $board := slice -}}
+  {{- $others := slice -}}
+  {{- range .Pages.ByTitle -}}
+    {{- $member := . -}}
+    {{- $isBoard := false -}}
+    {{- range .Params.roles -}}
+      {{- if eq .body "board" -}}{{ $isBoard = true }}{{- end -}}
+    {{- end -}}
+    {{- if $isBoard -}}
+      {{- $board = append $member $board -}}
+    {{- else -}}
+      {{- $others = append $member $others -}}
+    {{- end -}}
+  {{- end -}}
+  <div class="pack">
+    <header class="pack__header">
+      <p class="pack__eyebrow">INNER SAVAGES</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}<div class="pack__intro">{{ . }}</div>{{ end }}
+    </header>
+
+    {{ with $board }}
+      <section class="pack__section pack__section--board" aria-labelledby="pack-board-heading">
+        <h2 id="pack-board-heading">Zarząd</h2>
+        <div class="pack__grid">
+          {{ range . }}{{ partial "members/card.html" (dict "page" . "board" true) }}{{ end }}
+        </div>
+      </section>
+    {{ end }}
+
+    {{ with $others }}
+      <section class="pack__section" aria-labelledby="pack-members-heading">
+        <h2 id="pack-members-heading">Wataha</h2>
+        <div class="pack__grid">
+          {{ range . }}{{ partial "members/card.html" (dict "page" . "board" false) }}{{ end }}
+        </div>
+      </section>
+    {{ end }}
+    {{ with site.GetPage "/friends" }}
+      {{ with .RegularPages.ByTitle }}
+        <section class="pack__section" aria-labelledby="pack-friends-heading">
+          <h2 id="pack-friends-heading">Przyjaciele</h2>
+          <div class="pack__grid">
+            {{ range . }}{{ partial "members/card.html" (dict "page" . "board" false) }}{{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

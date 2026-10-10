@@ -1,0 +1,41 @@
+Tool: built-in image_gen (edit / reference-guided portrait)
+Output: portrait.png
+Identity reference 1: user-provided Bayer team photo, temporarily saved at /tmp/innersavages-jakub-zieba-team-reference.png; only the man on the far right.
+Identity reference 2: user-provided older LinkedIn photo, temporarily saved at /tmp/innersavages-jakub-zieba-older-reference.jpg.
+Style reference: content/members/jakub-skory/portrait.png (style only).
+Original reference photos not published.
+
+STEP 1 — reference-guided portrait
+Use case: identity-preserve / stylized-concept.
+Asset type: square illustrated member portrait for the Polish hackers collective Inner Savages.
+Input images: Image 1 is a 2021 identity reference: ONLY the man at the FAR RIGHT with side-swept light-brown hair, black rectangular glasses and a short beard is Jakub Zięba. Ignore the other three people. Image 2 is the SAME person's older photo from over ten years ago, supporting face recognition only; do not copy the suit or younger appearance. Image 3 is ONLY the reference for the detailed gritty industrial illustration style, charcoal setting and warm orange lighting. Do not copy Image 3's face, hairstyle, bushy beard, shirt inscription, laptop or background sign.
+
+Primary subject: transform Jakub Zięba into a friendly confident male orc with recognizable side-swept brown hair, rectangular black glasses, relatively elongated face and cheerful wide smile from Image 1. A full but short tidy light-brown/dark blond beard at chin and jaw, close moustache, not a large bushy hanging beard. Amber eyes visible behind clear eyeglass lenses.
+Orc traits: muted olive-gray skin with restrained leathery texture, clearly pointed ears, stronger brow ridges and angular cheekbones, somewhat broader orc nose and jaw while retaining the reference's distinctive longer face. Do not turn him into a giant enraged brute or a human with pasted-on ears. Two modest lower canine tusks emerge FROM INSIDE the smiling mouth, rooted in lower gumline behind the lower lip. Oral opening and normal teeth visible; tusks never originate in lip or cheek skin. Expression is relaxed and openly cheerful, no warpaint or jewelry.
+
+Clothing: worn charcoal pullover hoodie with the hood DOWN, real soft fabric, natural folds and slightly faded chest print. A recognizable classic multicolor PlayStation PS logo above the exact white/sandy inscription "PlayStation". Place both on visible chest well below the short beard. Correct recognizable brand logo and spelling; no other inscription. Hoodie not fantasy armor, technical jacket or corporate uniform.
+
+Background: dark industrial room with a worn wall. Behind ONE shoulder, clearly secondary to the character, hangs a rectangular League of Legends poster: moody blue-green Summoner's Rift landscape with distant turrets and a readable gold "LEAGUE OF LEGENDS" title/wordmark. A slightly worn paper print pinned flat against the wall, not a floating game interface or giant luminous display. The poster must be identifiable but not dominate the portrait.
+Composition: one centered head-and-upper-torso character in a square, relaxed slight three-quarter angle. Full hair and pointed ears comfortably inside the frame; enough chest visible for PlayStation logo and inscription. No objects or hands required in foreground, avoid obscuring chest or face.
+Style: detailed gritty illustrated orc character, angular shadows, worn matte fabric, charcoal and black, sandy highlights, warm orange rim light on hair and shoulders, restrained grunge like Image 3. Poster can introduce muted cool colors. Opaque dark background. Not a photograph, anime, cartoon or esports team advertisement.
+Avoid: other people from the group photo, gray company hoodie, glasses copied from the older photo instead of Image 1, suit, exaggerated long beard, bald head, cyber-monocle, ear jewelry, weapons, fantasy armor, extra props, green Matrix code, excessive neon, unrelated slogans, watermark, decorative frame. 1:1 square.
+
+STEP 2 — refine orc traits and lower tusks
+Use case: precise-object-edit.
+Edit ONLY the face anatomy and complexion of the provided Jakub Zięba portrait. Keep ALL hair, glasses, short beard and moustache, cheerful expression, hoodie with exact PlayStation logo and spelling, League of Legends poster, pose, lighting, background and framing unchanged.
+The portrait currently has pointed ears but mostly human teeth and proportions. Make him subtly but clearly an ORC, while keeping his recognizable face and warm cheerful smile. Apply moderate adjustments only, NOT a monstrous redesign: a little stronger brow ridge and cheek planes, slightly broader nose, muted olive-gray skin with natural fine texture rather than human tan. No giant jaw, coarse scales, warpaint or scars.
+MOST IMPORTANT: add TWO modest lower canine tusks naturally emerging from the lower gumline INSIDE the existing open smiling mouth. Their bases are behind the lower lip at the lateral corners of the mouth, their tips rise upward into view beside the visible upper teeth. Keep the existing smile and visible upper tooth row; each tusk is a slightly elongated natural lower tooth, not a massive saber. Show their clear dental origin inside the oral opening. The lower lip overlaps their roots; no tooth piercing facial skin, lip surface, cheeks, beard or moustache. No upper vampire fangs. Preserve expressive eyes behind glasses.
+All other elements must remain exactly as in the input. Single square 1:1 opaque detailed gritty industrial character illustration.
+
+STEP 3 — replace workshop background and enlarge/recenter PlayStation print
++Use case: precise-object-edit.
+Edit the supplied Jakub Zięba orc portrait. Make exactly TWO changes: replace the workshop background and enlarge/recenter the hoodie print. Preserve the character face, smile, small lower tusks, glasses, hair, beard, ears, skin, pose, hoodie cut and foreground lighting unchanged.
+
+1. BACKGROUND:
+Remove ALL workshop elements from the background: hanging glowing filament bulb at upper left, pipes, metal racks, wires, cabinets, server equipment, industrial machines and narrow vertical glowing tubing. Replace them with a simple dark charcoal worn plaster/concrete wall, understated matte texture and soft shadows. It is his own quiet room, not the repeated hacker workshop from another portrait. Keep the existing rectangular League of Legends poster on the wall behind the right-of-image shoulder, including its blue-green landscape and readable gold title. Preserve its overall placement and proportion. No additional posters, new props, shelves or gaming equipment. Keep warm rim light on the character but no visible lamp/bulb in the backdrop. The left background should be uncluttered dark textured wall.
+
+2. PLAYSTATION PRINT:
+Remove the existing SMALL off-center PlayStation chest print on the right side of the image.
+Put ONE much LARGER classic multicolor PlayStation PS logo centrally on the FRONT of the hoodie, aligned with the middle of the character's chest/body, between the drawstrings rather than near one side. Below it the exact inscription "PlayStation" in clear sandy/off-white lettering, also centered.
+The multicolor PS symbol should be about TWICE the current linear size, roughly 30–35% of the visible torso width. The lettering below spans about 40–45% of that width. Make the combined logo and wordmark visibly the main chest design, not a small pocket emblem. Fit it fully within the visible hoodie and frame with breathing room underneath; no clipping at the bottom. A slight worn/faded print follows the natural fabric folds. Maintain correct recognizable PS symbol and wordmark spelling. Do not create a second duplicate logo anywhere.
+All other image details remain unchanged. Maintain detailed gritty character illustration, matte fabric, charcoal palette with warm orange rim lighting, one person, 1:1 square opaque background. No additional text, brands, objects or watermark.

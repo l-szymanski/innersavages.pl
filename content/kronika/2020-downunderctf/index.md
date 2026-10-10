@@ -3,6 +3,12 @@ title: "DownUnderCTF"
 date: 2020-09-18
 endDate: 2020-09-20
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/jakub-zieba"
+  - "/members/maciej-kopczynski"
+  - "/members/monika-szymanska"
+  - "/members/andrzej-borowicz"
 location: "Online"
 ---
 

@@ -1,0 +1,13 @@
+Tool: built-in image_gen (edit)
+Accepted master: portrait.png
+Reusable description of the approved portrait; use portrait.png as the identity and style reference for future edits.
+
+Use case: identity-preserve / stylized-concept.
+Asset type: square illustrated member avatar for the Polish hackers collective Inner Savages.
+Subject: Łukasz Szymański as a bald orc chieftain with a focused, composed expression, olive-gray textured skin, powerful but moderated brow and jaw, pointed ears, orange eyes and lower canine tusks rooted inside the mouth. Full compact dark brown-charcoal beard following the jaw and chin, with subtle salt-and-pepper gray at the chin and a close moustache. A couple of understated small metal beard details remain. Small hollow dark-steel ear tunnels fitted into the earlobes; no hanging earrings.
+Eyewear: recognizable simple rectangular black prescription frames with clear lenses. Both orange eyes stay visible. A compact round weathered cyber-monocle is integrated over the lens on the RIGHT side of the image, with amber HUD details and a temple mount. The LEFT side of the image has a normal unobstructed rectangular lens. One eyeglass frame with one cyber attachment, no overlapping pairs of glasses.
+Clothing: anthracite technical jacket with raised collar, reinforced seams, worn matte fabric and metal fasteners. Blue Kubernetes wheel patch on the upper-arm sleeve at LEFT OF IMAGE. Small four-color Google Cloud pin at the collar at RIGHT OF IMAGE, clear of the beard. Preserve these placements.
+Handheld object: rugged customized cyberdeck held firmly by its side handle in one large foreground hand. Worn angular charcoal-and-steel casing, physical keyboard, tactile buttons and knobs, amber diagnostic screen, visible connector and one short cable. Natural fingers and grip. Device angled towards the viewer without obscuring the face, eyewear, sleeve patch or collar pin.
+Composition: one centered head-and-upper-torso character, bald head and ears comfortably inside the square, hand and cyberdeck in the lower foreground. Opaque near-black charcoal backdrop with subtle smoky worn texture. 1:1 aspect ratio.
+Style: detailed gritty industrial character illustration, angular forms, heavy charcoal shadows, sandy highlights, worn steel, restrained grunge and warm orange rim lighting.
+Avoid: caps, hoodies, knives, weapons, blood, fantasy shoulder spikes, bone necklaces, excessive neon, green Matrix code, LinkedIn branding, slogans, extra characters or limbs, additional logos, watermarks and decorative frames.

@@ -1,0 +1,8 @@
+{{- with .text -}}
+  <div class="pack-motto pack-motto--{{ $.variant }}">
+    {{- if eq $.variant "profile" -}}
+      <p class="pack-motto__label">Motto</p>
+    {{- end -}}
+    <p class="pack-motto__text">{{ . }}</p>
+  </div>
+{{- end -}}

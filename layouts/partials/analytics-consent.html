@@ -1,0 +1,16 @@
+{{- $analytics := partialCached "analytics-config.html" . -}}
+{{- if $analytics.active -}}
+  <aside id="analytics-consent" class="analytics-consent" role="region"
+    aria-labelledby="analytics-consent-title" tabindex="-1"
+    data-analytics-token="{{ $analytics.token }}" hidden>
+    <h2 id="analytics-consent-title">Szanujemy Twoją prywatność</h2>
+    <p>Nie interesuje nas, kim jesteś ani co robisz w internecie. Chcemy jedynie wiedzieć, ile osób odwiedza naszą stronę.</p>
+    <p>Czy zgadzasz się na zbieranie zbiorczych statystyk za pomocą Cloudflare Web Analytics?</p>
+    <div class="analytics-consent__actions">
+      <button type="button" data-analytics-decision="granted">Zgadzam się</button>
+      <button type="button" data-analytics-decision="denied">Nie, dziękuję</button>
+    </div>
+  </aside>
+  {{- $script := resources.Get "js/analytics-consent.js" | minify | fingerprint -}}
+  <script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{- end -}}

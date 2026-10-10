@@ -3,6 +3,12 @@ title: "DarkCTF"
 date: 2020-09-25
 endDate: 2020-09-27
 category: ctf
+participants:
+  - "/members/lukasz-szymanski"
+  - "/members/jakub-zieba"
+  - "/members/maciej-kopczynski"
+  - "/members/monika-szymanska"
+  - "/members/jakub-skory"
 location: "Online"
 ---
 

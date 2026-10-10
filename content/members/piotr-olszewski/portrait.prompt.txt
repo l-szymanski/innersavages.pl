@@ -1,0 +1,18 @@
+Portret Piotra Olszewskiego — zaakceptowana wersja główna
+Narzędzie: wbudowany imagegen.
+Wynik: portrait.png (zaakceptowany wariant 2, przeniesiony bez zmian).
+Referencje tożsamości, niepublikowane na stronie:
+- /tmp/innersavages-piotr-reference.jpg — zdjęcie LinkedIn dostarczone przez użytkownika.
+- /home/luc/Downloads/bkihack2026/signal-2026-03-28-10-33-20-740_002.jpg — mężczyzna siedzący najgłębiej w kadrze, w czarnej bluzie, z rękami za oparciem krzesła. Pozostałe osoby należy zignorować.
+
+Use case: stylized-concept / identity-preserve.
+Asset type: square illustrated member portrait for Inner Savages.
+Subject: Piotr Olszewski as a recognizable orc motorcyclist in the earliest subtle stage of chaos mutation. Preserve his rounded face, short cropped dark hair with slightly receding temples, slim rectangular glasses, natural nose and jaw proportions, full cheeks and short chin/jaw stubble. No long beard or monstrous facial redesign.
+Skin: clearly muted olive-green on face, ears, neck and exposed hand, without pink human blush. Preserve natural textured skin and warm orange rim lighting. Slightly enlarged pointed ears, restrained proportions.
+Eyes: glowing hot amber/orange irises, bright cores and a small soft halo visible through clear glasses, faint lens reflection. No blank white eyes or laser beams.
+Horns: two tiny nascent dark bone/keratin horn buds at the upper forehead near the hairline, fingernail height, subtly emerging among the short hair with an organic transition from skin. No large spikes, curled horns or demon crown.
+Expression: quiet mischievous half-smirk with subtly tightened brows and a hint of dangerous confidence; preserve Piotr's likeness and individual facial anatomy. Two small ivory lower canine tusks naturally rise from inside the mouth, roots behind the lower lip. No teeth growing through lip or cheek skin.
+Clothing: open worn charcoal leather motorcycle jacket with scuffed seams and matte metal zipper over a plain dark T-shirt. One small worn green embroidered Node.js patch on the chest, recognizable wordmark and JS hexagon. No other programming logos or slogans.
+Props: matte charcoal motorcycle helmet casually tucked low under one arm. A historical black-powder percussion revolver with wooden grip and dark steel cylinder/barrel rests flat on the workbench on the opposite lower side. In the background, part of a motorcycle with fuel tank and handlebar, no invented brand/model. Keep props subordinate to the face.
+Style: detailed gritty dark industrial illustration; charcoal garage, sandy highlights, restrained warm orange side light, textured skin and worn leather. Centered head and upper torso, relaxed three-quarter angle, square 1:1 opaque image, room above head and ears.
+Avoid: extra people, fantasy armor, warpaint, grotesque jaw or brow, large demon horns, exaggerated neon, copied backgrounds from other portraits, extra weapons, shooting action, added slogans, watermark or decorative frame.

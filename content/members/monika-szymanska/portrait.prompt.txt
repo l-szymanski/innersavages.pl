@@ -1,0 +1,16 @@
+Tool: built-in image_gen (edit)
+Identity reference: LinkedIn profile photo supplied by the user; downloaded temporarily, not included in the page bundle.
+Style reference: ../lukasz-szymanski/portrait.png
+Output: portrait.png
+
+Use case: identity-preserve / style-transfer.
+Asset type: square illustrated member portrait for Inner Savages.
+
+Input image 1 is the IDENTITY REFERENCE and EDIT TARGET: the woman's photo supplied by the user. Transform this same adult woman into an orc woman while keeping her recognizable. Preserve her characteristic facial proportions, nose, lips, eye shape, cheek and jaw contours, slight knowing smile, head angle, and dark layered shoulder-length hair with its side-swept fringe. Maintain her individual personality rather than creating a generic fantasy woman.
+Input image 2 is ONLY a STYLE REFERENCE: the existing orc chieftain portrait. Borrow its detailed gritty illustration, warm orange rim light, charcoal background, sandy/steel highlights and weathered industrial textures. DO NOT copy that male character's face, bald head, beard, monocle, ear tunnels, cyberdeck, Kubernetes patch or Google Cloud pin.
+
+Primary transformation: give the woman muted olive-gray orc skin, subtle stronger orc brow contours, clearly pointed ears visible around the hair, and two small lower tusks. Keep enough of her original face and expression for an unmistakable resemblance. Her eyes can have a restrained amber/orange ember glow, with iris detail still visible. No beard. She should look confident and capable, with a slight mischievous smile consistent with the photograph.
+Clothing: adapt her existing light jacket into a practical worn sandy-gray technical jacket with charcoal inserts, reinforced seams, a metal zipper and understated industrial fasteners. Keep the layered collar and the broad clothing arrangement suggested by her photo. No corporate branding, no invented skill or role symbols, no new handheld objects.
+Composition: one character, head and upper torso, slight three-quarter pose based on the photo, face as the clear focal point. Reframe as a square RPG character portrait with the entire head and pointed ears comfortably inside the frame. Natural non-sexualized clothing and proportions.
+Lighting and background: dark charcoal textured backdrop, soft warm orange rim light, enough soft frontal light to read her face and hair, restrained sandy highlights. Opaque background, 1:1 aspect ratio.
+Style: detailed gritty illustrated character art, strong angular shadows, worn material detail, restrained grunge, matching the Inner Savages portrait collection. Avoid glossy glamour retouching, caricatured distortions, oversized teeth, full fantasy armor, excessive neon, Matrix code rain, props from the male reference, slogans, text, watermarks, decorative borders and extra people.

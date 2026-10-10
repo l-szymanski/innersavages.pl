@@ -6,51 +6,62 @@ order: 1000
 
 <!--more-->
 
-# Administrator
-Administratorem danych niniejszej strony jest stowarzyszenie Inner Savages, nr KRS 0000857213, z siedzibą w Bydgoszczy. 
-W celu kontaktu z administratorem proszę skorzystać z danych znajdujących się na [stronie kontaktowej](/contact/).
+## Cenimy prywatność i anonimowość
 
-# Twoja prywatność
-Pliki cookie to bardzo małe pliki tekstowe, które są tworzone i przechowywane na komputerze użytkownika podczas 
-odwiedzania strony internetowej. Używamy plików cookie do różnych celów, w tym do ulepszania obsługi online na naszej 
-stronie internetowej.
+Nie interesuje nas śledzenie użytkowników, identyfikowanie konkretnych osób ani tworzenie profili odwiedzających. Chcemy po prostu wiedzieć, ile osób zagląda na naszą stronę. Jeśli nie chcesz uczestniczyć nawet w takich statystykach — szanujemy to.
 
-Możesz usunąć wszystkie pliki cookie już zapisane na komputerze, ale pamiętaj, że usunięcie plików cookie może 
-uniemożliwić korzystanie z części naszej strony internetowej.
+Nie wykorzystujemy danych do marketingu, reklam ani remarketingu i nie zbieramy ich na zapas.
 
-# Śledzenie i wydajność
-Te pliki cookie służą do zbierania informacji w celu analizy ruchu na naszej stronie internetowej i sposobu, w jaki 
-użytkownicy korzystają z naszej strony internetowej.
+## Administrator i kontakt
 
-Na przykład te pliki cookie mogą śledzić takie rzeczy, jak czas spędzony na stronie lub odwiedzane strony, co pomaga nam 
-zrozumieć, w jaki sposób możemy ulepszyć naszą witrynę internetową.
+Administratorem danych związanych z działaniem strony jest Stowarzyszenie Inner Savages, KRS 0000857213, z siedzibą w Bydgoszczy. Adres: ul. Igrzyskowa 6/39, 85-796 Bydgoszcz, Polska.
 
-Informacje zebrane przez te pliki nie identyfikują żadnego konkretnego użytkownika.
+W sprawach prywatności napisz na [zarzad@innersavages.pl](mailto:zarzad@innersavages.pl). Pozostałe dane stowarzyszenia znajdziesz na [stronie Kontakt](/contact/).
 
-# Logi serwera
-Serwer na którym znajduje się strona może zbierać informacje o użytkownikach w formie logów, składających się z adresu 
-IP, informacji o urządzeniu, przeglądarce, systemie operacyjnym w połączeniu ze znacznikiem czasowym wizyty.
+## Działanie strony i Cloudflare CDN
 
-# Targeting i reklama
-Te pliki cookie służą do wyświetlania reklam, które mogą Cię zainteresować na podstawie Twoich zwyczajów przeglądania.
+Strona jest statyczna: nie ma backendu aplikacyjnego, rejestracji ani kont użytkowników. Nie prowadzimy własnej bazy danych odwiedzających ani nie podejmujemy wobec nich zautomatyzowanych decyzji, w tym profilowania.
 
-Pliki te tworzone przez naszych dostawców treści i/lub reklam, mogą łączyć informacje zebrane z naszej strony z innymi 
-informacjami, które gromadzili niezależnie w związku z działaniami przeglądarki internetowej w ich sieci witryn.
+Hosting i Cloudflare CDN obsługują jednak połączenia niezbędne do wyświetlenia strony. Mogą przy tym przetwarzać adres IP, czas i adres żądania oraz informacje techniczne o przeglądarce i urządzeniu, także w logach. Cloudflare pomaga dostarczać treści, poprawiać wydajność, chronić przed atakami i utrzymywać dostępność serwisu.
 
-Jeśli zdecydujesz się usunąć lub wyłączyć te pliki cookie, reklamy nadal będą wyświetlane, ale mogą one nie być 
-odpowiednie dla Ciebie.
+Podstawą przetwarzania niezbędnych danych technicznych jest nasz prawnie uzasadniony interes: utrzymanie działającej i bezpiecznej strony (art. 6 ust. 1 lit. f RODO). Obsługa tych danych jest niezależna od Twojej decyzji o dobrowolnej analityce.
 
-Dostawcy zewnętrzni, w tym Google, używają plików cookie do wyświetlania reklam na podstawie poprzednich odwiedzin 
-użytkownika na stronie innersavages.pl lub innych witrynach.
+## Zbiorcze statystyki — tylko za zgodą
 
-Pliki cookie do wyswietlania reklam umożliwiają firmie Google i jej partnerom wyświetlanie użytkownikom konkretnych 
-reklam na podstawie ich odwiedzin w witrynie szymanski.ninja i/lub innych witrynach internetowych
+Korzystamy z Cloudflare Web Analytics, aby poznać przybliżoną liczbę odwiedzających i odsłon, popularność podstron oraz podstawowe informacje o wydajności strony. Nie wykorzystujemy tych statystyk do identyfikowania konkretnych osób.
 
-Użytkownicy mogą zrezygnować ze spersonalizowanych reklam w Ustawieniach reklam. Użytkownicy mogą też zrezygnować z 
-wykorzystywania plików cookie innych firm do wyświetlania spersonalizowanych reklam. Wystarczy wejść na stronę 
-www.aboutads.info.
+Zgodnie z [dokumentacją Cloudflare](https://developers.cloudflare.com/web-analytics/data-metrics/core-web-vitals/) Web Analytics nie używa analitycznych cookies ani fingerprintingu, czyli rozpoznawania osób na podstawie cech ich urządzenia lub przeglądarki.
 
-# Nagroda
-Skoro dotarłeś aż tutaj to zasługujesz na słodkiego kotka.
+**Bez Twojej zgody nie uruchamiamy Cloudflare Web Analytics ani nie zbieramy dobrowolnych statystyk odwiedzin.** Przed zgodą nie pobieramy skryptu analitycznego i nie wysyłamy danych do tej usługi. Brak decyzji oraz odmowa oznaczają wyłączoną analitykę. Zgoda jest dobrowolna, a odmowa nie ogranicza korzystania ze strony.
 
-![](./cat.jpeg "Słodki kotek") 
+W zakresie, w jakim analityka wiąże się z przetwarzaniem danych osobowych, podstawą jest Twoja zgoda (art. 6 ust. 1 lit. a RODO). Nie korzystamy z Google Analytics.
+
+## Twój wybór i pamięć przeglądarki
+
+Możesz zaakceptować lub odrzucić analitykę, a później zmienić decyzję przez **„Ustawienia prywatności”** w stopce. Wycofanie zgody zapisuje odmowę i przeładowuje stronę z wyłączoną analityką. Nie wpływa na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem.
+
+Wybór zapisujemy wyłącznie w Twojej przeglądarce, w `localStorage`, pod kluczem `innersavages.analytics.consent`. Zapis zawiera decyzję, jej datę i wersję mechanizmu — bez identyfikatora użytkownika. Nie wysyłamy go na serwer i nie używamy do śledzenia.
+
+Decyzję uznajemy za ważną przez **180 dni**. Po tym czasie pytamy ponownie. Sam zapis może pozostać w przeglądarce do zastąpienia nową decyzją lub wyczyszczenia danych strony. Gdy pamięć przeglądarki jest niedostępna, wybór działa w bieżącym dokumencie; przy kolejnej wizycie pytanie może wrócić.
+
+Nie stosujemy analitycznych cookies. Cloudflare CDN może jednak, zależnie od włączonych zabezpieczeń, używać niezbędnych cookies technicznych, np. do ochrony przed botami. Ich zastosowanie opisuje [dokumentacja Cloudflare dotycząca cookies](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/).
+
+## Odbiorcy danych i przetwarzanie poza EOG
+
+Dane techniczne mogą otrzymywać dostawcy hostingu i infrastruktury, w tym Cloudflare, Inc. z siedzibą w USA, oraz podmioty pomagające im świadczyć te usługi. Cloudflare publikuje [listę podmiotów przetwarzających](https://www.cloudflare.com/gdpr/subprocessors/).
+
+Ze względu na globalną infrastrukturę Cloudflare dane mogą być przetwarzane poza Europejskim Obszarem Gospodarczym, w tym w USA. Cloudflare opisuje zabezpieczenia takich transferów, w tym EU–US Data Privacy Framework i standardowe klauzule umowne, w swojej [polityce prywatności](https://www.cloudflare.com/privacypolicy/) i [umowie dotyczącej przetwarzania danych](https://www.cloudflare.com/cloudflare-customer-dpa/). W tych dokumentach znajdziesz treść i zasady stosowania zabezpieczeń.
+
+## Jak długo przechowywane są dane
+
+Zapis decyzji o analityce działa na zasadach opisanych powyżej.
+
+Zgodnie z [FAQ Cloudflare Web Analytics](https://developers.cloudflare.com/web-analytics/faq/) pełne, niepróbkowane dane beacona są przechowywane przez 7 dni, po czym Cloudflare stosuje próbkowanie. Panel udostępnia statystyki z ostatnich sześciu miesięcy.
+
+Okresy przechowywania danych technicznych i logów zależą od używanych usług oraz ich konfiguracji. Kryteriami są potrzeba utrzymania i ochrony serwisu, analizy incydentów oraz obowiązki prawne. Cloudflare opisuje własne kryteria retencji w swojej [polityce prywatności](https://www.cloudflare.com/privacypolicy/).
+
+## Twoje prawa
+
+W zakresie przewidzianym przez RODO możesz żądać dostępu do swoich danych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a także przeniesienia danych, gdy spełnione są warunki tego prawa. Możesz również wnieść sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie oraz wycofać zgodę na analitykę.
+
+W sprawie swoich praw napisz na [zarzad@innersavages.pl](mailto:zarzad@innersavages.pl). Jeżeli uważasz, że Twoje dane są przetwarzane niezgodnie z prawem, możesz złożyć skargę do [Prezesa Urzędu Ochrony Danych Osobowych](https://uodo.gov.pl/pl/493/155).

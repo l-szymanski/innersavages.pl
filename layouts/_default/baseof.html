@@ -9,16 +9,6 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ partial "footer.html" . }}
-    {{ if and site.Params.googleAnalyticsID (not hugo.IsServer) }}
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
-      <script>
-        if (!("doNotTrack" in navigator) || navigator.doNotTrack !== "1") {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag("js", new Date());
-          gtag("config", "{{ site.Params.googleAnalyticsID }}", {anonymize_ip: true, cookie_expires: 0});
-        }
-      </script>
-    {{ end }}
+    {{ partial "analytics-consent.html" . }}
   </body>
 </html>

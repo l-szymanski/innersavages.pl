@@ -1,0 +1,105 @@
+{{- $event := .event -}}
+{{- $trophy := .trophy -}}
+{{- $variant := .variant | default "compact" -}}
+{{- $isGallery := eq $variant "gallery" -}}
+{{- $allowedPedestals := slice "default" "large" "special" -}}
+{{- $pedestalName := $trophy.pedestal | default "default" -}}
+
+{{- if not (in $allowedPedestals $pedestalName) -}}
+  {{- warnf "Trofeum w %q ma nieprawidłowy pedestal %q; używam default" $event.File.Path $pedestalName -}}
+  {{- $pedestalName = "default" -}}
+{{- end -}}
+
+{{- $artifactName := $trophy.artifact | default "" -}}
+{{- $artifact := false -}}
+{{- $pedestal := false -}}
+
+{{- if $artifactName -}}
+  {{- $artifactPath := printf "images/trophies/artifacts/%s.png" $artifactName -}}
+  {{- $artifact = resources.Get $artifactPath -}}
+  {{- if not $artifact -}}
+    {{- warnf "Trofeum w %q wskazuje brakujący artefakt %q; używam piktogramu zastępczego" $event.File.Path $artifactPath -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $artifact -}}
+  {{- $pedestalPath := printf "images/trophies/pedestals/%s.png" $pedestalName -}}
+  {{- $pedestal = resources.Get $pedestalPath -}}
+  {{- if not $pedestal -}}
+    {{- warnf "Trofeum w %q wskazuje brakujący piedestał %q; próbuję użyć default" $event.File.Path $pedestalPath -}}
+    {{- $pedestalName = "default" -}}
+    {{- $pedestal = resources.Get "images/trophies/pedestals/default.png" -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $hasArtwork := and $artifact $pedestal -}}
+{{- $awardDisplay := partial "trofea/award-display.html" $trophy -}}
+{{- if $isGallery -}}
+<a class="trophy-card-link" href="{{ $event.RelPermalink }}" aria-label="{{ $trophy.label | default "Osiągnięcie" }} — {{ $event.Title }}">
+{{- end -}}
+<article class="trophy-card trophy-card--{{ $variant }}{{ if $hasArtwork }} trophy-card--illustrated{{ else }} trophy-card--fallback{{ end }}"{{ with $artifactName }} data-artifact="{{ . }}"{{ end }} data-pedestal="{{ $pedestalName }}">
+  {{- if $hasArtwork -}}
+    {{- $artifactSmall := $artifact.Resize "220x webp q82" -}}
+    {{- $artifactMedium := $artifact.Resize "360x webp q84" -}}
+    {{- $artifactLarge := $artifact.Resize "560x webp q86" -}}
+    {{- $pedestalSmall := $pedestal.Resize "400x webp q82" -}}
+    {{- $pedestalMedium := $pedestal.Resize "720x webp q84" -}}
+    {{- $pedestalLarge := $pedestal.Resize "1080x webp q86" -}}
+    <div class="trophy-card__visual" aria-hidden="true">
+      <span class="trophy-card__glow"></span>
+      <picture class="trophy-card__artifact-layer">
+        <source
+          type="image/webp"
+          srcset="{{ $artifactSmall.RelPermalink }} {{ $artifactSmall.Width }}w, {{ $artifactMedium.RelPermalink }} {{ $artifactMedium.Width }}w, {{ $artifactLarge.RelPermalink }} {{ $artifactLarge.Width }}w"
+          sizes="(max-width: 520px) 52vw, (max-width: 780px) 42vw, 270px">
+        <img
+          src="{{ $artifactMedium.RelPermalink }}"
+          width="{{ $artifactMedium.Width }}"
+          height="{{ $artifactMedium.Height }}"
+          loading="lazy"
+          decoding="async"
+          alt="">
+      </picture>
+      <picture class="trophy-card__pedestal-layer">
+        <source
+          type="image/webp"
+          srcset="{{ $pedestalSmall.RelPermalink }} {{ $pedestalSmall.Width }}w, {{ $pedestalMedium.RelPermalink }} {{ $pedestalMedium.Width }}w, {{ $pedestalLarge.RelPermalink }} {{ $pedestalLarge.Width }}w"
+          sizes="(max-width: 780px) calc(100vw - 48px), 540px">
+        <img
+          src="{{ $pedestalMedium.RelPermalink }}"
+          width="{{ $pedestalMedium.Width }}"
+          height="{{ $pedestalMedium.Height }}"
+          loading="lazy"
+          decoding="async"
+          alt="">
+      </picture>
+    </div>
+  {{- else if $isGallery -}}
+    <div class="trophy-card__visual trophy-card__visual--fallback" aria-hidden="true">
+      <div class="trophy-card__fallback-mark">
+        {{ partial "trofea/artifact.html" $artifactName }}
+      </div>
+    </div>
+  {{- else -}}
+    <div class="trophy-card__fallback-icon" aria-hidden="true">
+      {{ partial "trofea/artifact.html" $artifactName }}
+    </div>
+  {{- end -}}
+
+  <div class="trophy-card__body">
+    <p class="trophy-card__date">{{ partial "kronika/date-range.html" $event }}</p>
+    {{- if $isGallery -}}
+      <h2>{{ $awardDisplay.title }}</h2>
+      {{ with $awardDisplay.detail }}<p class="trophy-card__award-detail">{{ . }}</p>{{ end }}
+      <span class="trophy-card__event">{{ $event.Title }}</span>
+    {{- else -}}
+      <h2>{{ with $trophy.label }}{{ . }}{{ else }}Osiągnięcie{{ end }}</h2>
+      <a class="trophy-card__event" href="{{ $event.RelPermalink }}">{{ $event.Title }}</a>
+      {{ with $trophy.team }}<p><span>Zespół</span>{{ . }}</p>{{ end }}
+      {{ with $trophy.project }}<p><span>Projekt</span>{{ . }}</p>{{ end }}
+    {{- end -}}
+  </div>
+</article>
+{{- if $isGallery -}}
+</a>
+{{- end -}}

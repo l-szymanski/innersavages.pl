@@ -1,12 +1,42 @@
-Tool: built-in image_gen (generate)
+Tool: built-in image_gen (edit)
 Output: portrait.png
-Symbolic fictional goblin avatar; not a photographic likeness or a statement about this person's appearance, profession or character.
+Likeness reference: the first adult man from the left in the user-supplied HackNation group photograph.
+Public name supplied by the user: Nijat Aliyev.
 
-Use case: stylized-concept.
-Asset type: square symbolic goblin avatar for the Friends gallery of the Polish hackers collective Inner Savages.
-Create one fictional goblin, NOT an orc and NOT a likeness of a real person. This is an imaginative symbolic avatar; do not portray a real friend's known appearance, profession or biography.
-Character anatomy: wiry narrow shoulders, angular small goblin face, oversized long pointed ears, olive-gray skin, clever amber eyes, slightly mischievous friendly expression. Smaller and more nimble than the broad muscular orc members, no huge jaw tusks or hulking build.
-Style: detailed gritty dark industrial character illustration, angular strong forms, matte charcoal clothes and backdrop, worn metal and fabric, sandy highlights, subdued warm orange rim light, restrained grunge. Match the established Inner Savages portraits' craftsmanship. Face is the dominant element, not equipment.
-Composition: a single centered head-and-upper-torso portrait with comfortable room around head and ears in a 1:1 square. Full face and both ears visible, opaque dark workshop backdrop. Readable at avatar size.
-Avoid: text, labels, slogans, logos, name inscriptions, charts with numbers, watermarks, decorative frame, weapons, blood, medieval armor, magical runes, fantasy spikes, excessive neon, Matrix code, caricatures of ethnicity, extra people or limbs. No UI mockup or website screenshot.
-Individual design variation: a slate-olive goblin with swept-back dark hair tied in a tiny low knot, clean-shaven narrow angular jaw, long tapered ears, fine pronounced cheekbones and an amused eyebrow lift. Practical dark charcoal overshirt with understated seam details over a plain gray crew-neck shirt. No glasses, no tusks, no earrings or ornaments. One subtly warm amber edge light and faint desaturated steel-blue reflections from shadowy industrial equipment in the backdrop. Do not infer ethnicity or nationality from the intended avatar's name; this is entirely fictional goblin concept art.
+Use case: identity-preserve.
+Asset type: square goblin profile portrait for the Inner Savages Friends gallery.
+Primary request: Edit the existing goblin portrait so its face recognizably resembles the adult man at the FAR LEFT of the supplied group photograph, while keeping the character a goblin in the existing dark industrial fantasy illustration style.
+Input images: Image 1 is the EDIT TARGET: existing slate-olive goblin portrait. Image 2 is the LIKENESS REFERENCE: group photograph. Use ONLY the FIRST adult man from the LEFT in the foreground (short dark wavy hair, dark rectangular eyeglasses, full dark beard, black hoodie). Ignore the other five people and the event background.
+Likeness: replace the target's long swept-back hair and tiny ponytail with the reference man's short, thick, gently tousled wavy dark brown hair. Match his broad gently rounded face, fuller cheeks, strong dark eyebrows, brown eyes and eye spacing, medium broad nose with rounded tip, and relaxed friendly small closed-mouth smile. Add his recognizable dark rounded-rectangular eyeglass frames, with transparent lenses that leave the eyes clearly visible. Add the reference man's neatly shaped full black/dark brown beard and moustache, fuller around the chin and jaw, trimmed at the cheeks. Keep the recognizable facial proportions and warmer friendly expression from this specific first man, translated into goblin anatomy. Remove the target's clean-shaven sharply narrow jaw and raised mischievous eyebrow.
+Style and invariants: keep the subject clearly a goblin with slate-olive skin, two large long pointed ears, slim shoulders, and no tusks. Preserve the detailed gritty dark industrial character illustration, restrained warm amber side/rim light, faint desaturated steel-blue reflections, softly blurred dark workshop equipment, worn charcoal overshirt over a plain gray crew-neck shirt, centered head-and-upper-torso composition, image quality, and opaque background. Keep the full face and both complete ear tips comfortably inside the square 1:1 frame. Produce a single polished square avatar with a face readable at thumbnail size.
+Avoid: changing to a human skin tone or species, long hair or ponytail, blending features from the other five men, huge orc jaw or tusks, severe wrinkles or elderly appearance, event lanyard/badge, logos, text, watermarks, decorative frame, extra people, new props, extra limbs, cropped ear tips.
+
+Final pin edit: a small worn no-slop pin integrated with the collar, with the red slash covering the lettering.
+Tool: built-in image_gen (edit)
+Output: portrait.png
+Input: the approved goblin portrait before the pin was added. The pin and its lettering are intentional exceptions to the likeness prompt's prohibition on new props and text.
+
+Use case: precise-object-edit.
+Edit this image only by adding a tiny round metal pin physically fastened to the angled jacket collar on the viewer's right. Keep the entire portrait, face, glasses, hair, expression, ears, background, lighting, composition and square canvas unchanged.
+
+The pin is a small, weathered, low-contrast object, approximately 50px across on this 1254px image. It sits tilted about 25 degrees with the collar and viewed obliquely, with an elliptical outline, a visible dark bronze side edge, and a tight shadow connecting it to compressed cloth immediately underneath. Its perspective, grain, focus and warm amber/cool shadow light must match the fabric and seam. Make it look painted within the original industrial illustration, a real worn pin rather than a graphic sticker.
+
+The pin's face is tarnished gray enamel printed with the small black lowercase word "slop". A red ring surrounds it. CRUCIAL: paint a SOLID, OPAQUE, UNBROKEN RED DIAGONAL STROKE across the CENTER OF THE WORD, from upper right to lower left. The red stroke is 1/8 of the pin diameter thick and physically painted ON TOP of the black word, obscuring middle sections of the black letters "l" and "o". Where the red stroke crosses black letters, those portions must be RED, never black. The red stroke must cover the word, not pass behind it. The result is unmistakably a prohibition symbol crossing out "slop". Let the stripe partly hide the letters; perfect unobstructed readability is less important than a visibly continuous red strike-through.
+
+No other changes, no extra accessories, no white sticker or white glow.
+
+Name patch edit: embroidered "Automata Goblin" tape above the pocket on the viewer's right.
+Tool: built-in image_gen (edit)
+Output: portrait.png
+Input: the portrait with the corrected no-slop collar pin and the name patch before relocation. Final placement is on the right side of the image, from the viewer's perspective.
+
+Use case: precise-object-edit.
+Edit the supplied existing square goblin portrait. Make exactly one correction: MOVE the embroidered "Automata Goblin" name patch from the LEFT SIDE OF THE IMAGE to the RIGHT SIDE OF THE IMAGE, as seen by the viewer.
+
+Remove the entire rectangular name patch from its present position on the image's lower left and restore the original dark worn jacket fabric and seams underneath naturally. Keep the small round crossed-out-slop pin exactly where it is on the upper LEFT lapel.
+
+Sew the same "Automata Goblin" cloth name tape directly ABOVE the OTHER breast pocket, on the image's RIGHT side. On this 1254px square canvas the new patch should occupy approximately x=830 to 1115 and y=1035 to 1100, above the existing right-side pocket seam. There must be exactly ONE name patch in the final image, on the viewer's RIGHT; no name patch on the viewer's LEFT. Do not mirror or flip the portrait.
+
+Keep the current patch design: a modest dark charcoal woven cloth rectangle, slightly worn sewn border and small muted sand-colored embroidered lettering reading exactly "Automata Goblin" in one line. Match the new pocket's angle, perspective and cloth folds. Physically integrate the patch with seam stitches, slight fabric puckering, tiny contact shadows and the dimmer lighting on the image's right-hand side. Do not simply paste a flat rectangular graphic onto the image.
+
+Preserve the exact face, likeness, expression, eyes, dark glasses, beard, hair, slate-olive skin, pointed ears, pose, round no-slop pin with red slash covering the letters, collar, gray shirt, all jacket details outside the two small affected areas, background, original lighting, palette, framing, square dimensions and illustration style.

@@ -33,4 +33,4 @@ Skład zespołu:
 - Janek Baumgart
 - Jakub Zięba
 - Jakub Skory
-- Nijat A.
+- Nijat Aliyev

@@ -6,7 +6,7 @@ category: hackathon
 participants:
   - "/members/monika-szymanska"
   - "/members/lukasz-szymanski"
-  - "/friends/radek-g"
+  - "/friends/radek-glowinski"
   - "/members/jakub-skory"
   - "/members/jakub-zieba"
 location: "Bydgoszcz"
@@ -22,6 +22,6 @@ Zdobywamy 3. miejsce w kolejnej edycji Bydgoskiego Hackathonu z aplikacją do wy
 
 - Monika Mohylowska
 - Łukasz Szymański
-- Radek G.
+- Radek Głowiński
 - Jakub Skory
 - Jakub Zięba

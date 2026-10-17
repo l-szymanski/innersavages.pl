@@ -6,7 +6,7 @@ category: ctf
 participants:
   - "/members/lukasz-szymanski"
   - "/members/jakub-zieba"
-  - "/friends/radek-g"
+  - "/friends/radek-glowinski"
 location: "Online"
 links:
   - label: "Profil zespołu w CTFTime"
@@ -17,4 +17,4 @@ Capture The Flag spodobało nam się na tyle, iż rejestrujemy się na [CTFTime]
 
 - Łukasz Szymański
 - Jakub Zięba
-- Radek G.
+- Radek Głowiński

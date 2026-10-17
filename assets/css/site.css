@@ -762,71 +762,12 @@ body {
   .is-header__nav { display: none; }
   .is-header__actions { gap: 18px; }
   .is-header__support { min-height: 42px; font-size: 13px; }
-
-  .is-hero {
-    height: auto;
-    min-height: 720px;
-  }
-
-  .is-hero__inner {
-    display: block;
-    min-height: 720px;
-  }
-
-  .is-hero__copy {
-    padding: 74px 32px 40px;
-    width: 56%;
-  }
-
-  .is-hero__art {
-    bottom: 0;
-    height: 72%;
-    left: 32%;
-    margin: 0;
-    position: absolute;
-    right: 9%;
-  }
-
-  .is-hero__motto {
-    bottom: 58px;
-    font-size: clamp(45px, 7vw, 72px);
-    margin: 0;
-    position: absolute;
-    right: 24px;
-    width: 25%;
-  }
 }
 
 @media (max-width: 760px) {
   .is-header__search { display: none; }
   .is-header__support { padding: 0 10px; gap: 10px; }
   .is-header__logo img { height: 54px; }
-
-  .is-hero { min-height: 790px; }
-  .is-hero__inner { min-height: 790px; }
-  .is-hero__copy {
-    padding: 48px 22px 0;
-    width: 100%;
-  }
-  .is-hero__wordmark img { width: min(92vw, 610px); }
-  .is-hero__tagline { font-size: 12px; letter-spacing: .12em; white-space: normal; }
-  .is-hero__lead { font-size: 16px; margin-top: 26px; }
-  .is-hero__buttons { flex-wrap: wrap; gap: 12px; }
-  .is-btn { min-height: 50px; padding: 0 20px; font-size: 13px; }
-
-  .is-hero__art {
-    bottom: -12px;
-    height: 53%;
-    left: -12%;
-    right: 18%;
-  }
-
-  .is-hero__motto {
-    bottom: 75px;
-    font-size: 43px;
-    right: 12px;
-    width: 32%;
-  }
 }
 
 /* Iteration 2: use the approved motto artwork as a standalone asset, not as a page map. */
@@ -860,6 +801,124 @@ body {
   height: auto;
   max-width: 100%;
   width: 100%;
+}
+
+/* Keep responsive hero elements in the grid so content sets the height. */
+@media (max-width: 1080px) {
+  .is-hero {
+    height: auto;
+    min-height: 0;
+  }
+
+  .is-hero__inner {
+    align-items: center;
+    column-gap: 24px;
+    grid-template-areas: "copy art" "copy motto";
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    height: auto;
+    min-height: 0;
+    padding: 48px 32px 32px;
+    row-gap: 20px;
+  }
+
+  .is-hero__copy {
+    grid-area: copy;
+    min-width: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .is-hero__wordmark img {
+    max-width: 520px;
+    width: 100%;
+  }
+
+  .is-hero__tagline {
+    font-size: 12px;
+    letter-spacing: .12em;
+    margin: 12px 0 0;
+    white-space: normal;
+  }
+
+  .is-hero__lead {
+    font-size: 16px;
+    margin: 24px 0 0;
+  }
+
+  .is-hero__buttons {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0 0;
+  }
+
+  .is-hero__buttons .is-btn {
+    flex: 1 0 auto;
+    font-size: 13px;
+    gap: 18px;
+    justify-content: space-between;
+    max-width: 100%;
+    min-height: 50px;
+    padding: 12px 18px;
+  }
+
+  .is-hero__buttons .is-btn span {
+    flex-shrink: 0;
+  }
+
+  .is-hero__art {
+    align-self: end;
+    grid-area: art;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .is-hero__art img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .is-hero__motto {
+    align-self: start;
+    grid-area: motto;
+    justify-self: center;
+    margin: 0;
+    width: min(48%, 180px);
+  }
+}
+
+@media (max-width: 760px) {
+  .is-hero__inner {
+    column-gap: 16px;
+    grid-template-areas: "copy copy" "art motto";
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    padding: 40px 22px 24px;
+    row-gap: 32px;
+  }
+
+  .is-hero__copy {
+    justify-self: center;
+    max-width: 560px;
+  }
+
+  .is-hero__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .is-hero__motto {
+    align-self: center;
+    width: min(100%, 180px);
+  }
+}
+
+@media (max-width: 560px) {
+  .is-hero__buttons {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* Iteration 3: match approved desktop proportions more closely. */
